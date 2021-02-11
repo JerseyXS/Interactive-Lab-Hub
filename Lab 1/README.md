@@ -68,12 +68,15 @@ _Goals:_ What are the goals of each player? (e.g., jumping to a tree, opening th
 
 The interactive device can be anything *except* a computer, a tablet computer or a smart phone, but the main way it interacts needs to be using light.
 **Describe your setting, players, activity and goals here.**
+The purpose of this device is to help the user be more mindful of his/her hydration practices. In particular, this device is a smart water cup that sits on the user's desk. It starts off with an orange tone at the beginning of each day to signal that the user has not adequatly hydrated. Over time, as the user drinks more water, the device senses this and gradually changes its color to a cooler blue tone. The setting for this interaction will be at the user's work desk where he/she normally drinks water throughout the day. The actors involved will simply be the user and the device. Since device is synced to the user's Apple Watch for proximity detection, this ensures that the device does not give off false readings in the event that somebody else interacts with it.
 
 Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
 **Include a picture of your storyboard here**
 
+
 Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
 **Summarize feedback you got here.**
+I got positive feedback from the group. My group members stated that this is a common problem where their water glass sits unused for hours even though they are trying to be better about staying hydrated. My group helped me think through strategies for ensuring that the device does not get thrown off by other people in the household (similar to Amazon Alexa), so I added the Apple Watch integration based on this feedback.
 
 
 ## Part B. Act out the Interaction
@@ -81,8 +84,10 @@ Present your idea to the other people in your breakout room. You can just get fe
 Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
 
 **Are there things that seemed better on paper than acted out?**
+Overall, the interaction went pretty well. Using the device can be clunky at times due to design constraints.
 
 **Are there new ideas that occur to you or your collaborators that come up from the acting?**
+One idea that came up during this process is to incorporate an additional feature based on inactivity. Rather than solely show a warmer tone color statically if the user does not drink enough, the device can start pulsing if it detects that it has not been touched in a couple hours. This ramp up can help signal to the user that they are falling behind on their water drinking goals for the day in a more dynamic fashion.
 
 
 ## Part C. Prototype the device
@@ -99,7 +104,7 @@ Take a little time to set up the wizarding set-up that allows for someone to rem
 
 **Include your first attempts at recording the set-up video here.**
 
-Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
+Now, change the goal within the same setting, and update the interaction with the paper prototype. 
 
 **Show the follow-up work here.**
 
