@@ -68,6 +68,7 @@ _Goals:_ What are the goals of each player? (e.g., jumping to a tree, opening th
 
 The interactive device can be anything *except* a computer, a tablet computer or a smart phone, but the main way it interacts needs to be using light.
 **Describe your setting, players, activity and goals here.**
+
 The purpose of this device is to help the user be more mindful of his/her hydration practices. In particular, this device is a smart water cup that sits on the user's desk. It starts off with an orange tone at the beginning of each day to signal that the user has not adequatly hydrated. Over time, as the user drinks more water, the device senses this and gradually changes its color to a cooler blue tone. The setting for this interaction will be at the user's work desk where he/she normally drinks water throughout the day. The actors involved will simply be the user and the device. Since device is synced to the user's Apple Watch for proximity detection, this ensures that the device does not give off false readings in the event that somebody else interacts with it.
 
 Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
@@ -76,6 +77,7 @@ Sketch a storyboard of the interactions you are planning. It does not need to be
 
 Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
 **Summarize feedback you got here.**
+
 I got positive feedback from the group. My group members stated that this is a common problem where their water glass sits unused for hours even though they are trying to be better about staying hydrated. My group helped me think through strategies for ensuring that the device does not get thrown off by other people in the household (similar to Amazon Alexa), so I added the Apple Watch integration based on this feedback.
 
 
