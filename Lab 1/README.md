@@ -76,6 +76,8 @@ Sketch a storyboard of the interactions you are planning. It does not need to be
 
 ![sketch1](IMG_0194.jpg "storyboard")
 
+![sketch2](IMG_0195.jpg "storyboard")
+
 
 
 
