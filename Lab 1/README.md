@@ -74,6 +74,7 @@ The purpose of this device is to help the user be more mindful of his/her hydrat
 Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
 **Include a picture of your storyboard here**
 
+![sketch1](IMG_0194.jpg "storyboard")
 
 
 
@@ -120,6 +121,8 @@ Only now should you start worrying about what the device should look like. Devel
 Think about the setting of the device: is the environment a place where the device could overheat? Is water a danger? Does it need to have bright colors in an emergency setting?
 
 **Include sketches of what your device might look like here.**
+
+![sketch1](relative/path/to/img.jpg?raw=true "Title")
 
 **What concerns or opportunitities are influencing the way you've designed the device to look?**
 
