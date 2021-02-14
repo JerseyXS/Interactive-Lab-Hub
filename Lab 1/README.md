@@ -76,9 +76,7 @@ Sketch a storyboard of the interactions you are planning. It does not need to be
 
 ![sketch1](IMG_0194.jpg "storyboard")
 
-![sketch2](IMG_0195.jpg "storyboard")
-
-
+![sketch2](IMG_0196.jpg "storyboard")
 
 
 Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
