@@ -90,7 +90,7 @@ I got positive feedback from the group. My group members stated that this is a c
 Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
 
 **Are there things that seemed better on paper than acted out?**
-Overall, the interaction went pretty well. Using the device can be clunky at times due to design constraints.
+Overall, the interaction went pretty well. I realized very quickly that this device has the potential to be pretty messy with the water, so I need to be mindful of how I handle the full prototype.
 
 **Are there new ideas that occur to you or your collaborators that come up from the acting?**
 One idea that came up during this process is to incorporate an additional feature based on inactivity. Rather than solely show a warmer tone color statically if the user does not drink enough, the device can start pulsing if it detects that it has not been touched in a couple hours. This ramp up can help signal to the user that they are falling behind on their water drinking goals for the day in a more dynamic fashion.
@@ -104,17 +104,22 @@ Code for the "Tinkerbelle" tool, and instructions for setting up the server and 
 
 We invented this tool for this lab! 
 **Give us feedback on Tinkerbelle.**
+I had issues with getting tinkerbelle to run on my computer. I could not connect to the app through my browser even though it was running at my terminal. I ultimately had to use a friend's computer to finish this assignment.
 
 ## Part D. Wizard the device
 Take a little time to set up the wizarding set-up that allows for someone to remotely control the device while someone acts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
 
 **Include your first attempts at recording the set-up video here.**
 
-https://gifs.com/gif/YW2M22
+The goal for this initial video is to demo the act of taking a drink of water and having the device's color change accordingly
+https://youtu.be/K0tEWTWpAWc
 
 Now, change the goal within the same setting, and update the interaction with the paper prototype. 
 
 **Show the follow-up work here.**
+
+The goal for this different interaction is to demo a user 'cheating' the device by simply pouring out the water and watching its color change.
+https://youtu.be/-33fIlxDgqo
 
 ## Part E. Costume the device
 
@@ -122,19 +127,28 @@ Only now should you start worrying about what the device should look like. Devel
 
 Think about the setting of the device: is the environment a place where the device could overheat? Is water a danger? Does it need to have bright colors in an emergency setting?
 
+The main considerations for the setting of my costumed device, as alluded to earlier, is the presence of water. Water can be damaging to electronics like smartphones, so I mitigated this risk by putting my costumed device in a zioloc bag before filling the smart cup with water.
+
+Another consideration for this setting, given that it is daytime, is the brightness of the screen and the ability for users to still disern the color being shown to them. I was able to see the colors in my demo, but this is another factor that could potentially be improved.
+
 **Include sketches of what your device might look like here.**
 
-![sketch1](relative/path/to/img.jpg?raw=true "Title")
+![sketch3](IMG_0196.jpg "storyboard")
 
 **What concerns or opportunitities are influencing the way you've designed the device to look?**
 
+I wanted to make this device a fully-enclosed cup so that the user interacting with the device can use the same behaviors they are used to when it comes to drinking water. The downside to this approach, while better for the user, is that the interior of the cup loses a lot of volume to the smartphone. I thought this trade-off was worth it for the purposes of this lab.
 
 ## Part F. Record
 
 **Take a video of your prototyped interaction.**
 
+The Tinkerbelle prototype video can be found here: https://youtu.be/viKkhV8hoQ0
+This video takes the viewer through a user drinking water throughout the day using this smart cup device.
+
 **Please indicate anyone you collaborated with on this Lab.**
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
+I mainly worked on this aloine with some assistance from Brandt Beckerman for shooting the videos.
 
 # Staging Interaction, Part 2 
 
