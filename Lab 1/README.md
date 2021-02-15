@@ -133,7 +133,7 @@ Another consideration for this setting, given that it is daytime, is the brightn
 
 **Include sketches of what your device might look like here.**
 
-![sketch3](IMG_0196.jpg "storyboard")
+![sketch3](IMG_0203.jpg "costumed device sketch")
 
 **What concerns or opportunitities are influencing the way you've designed the device to look?**
 
