@@ -104,6 +104,7 @@ Code for the "Tinkerbelle" tool, and instructions for setting up the server and 
 
 We invented this tool for this lab! 
 **Give us feedback on Tinkerbelle.**
+
 I had issues with getting tinkerbelle to run on my computer. I could not connect to the app through my browser even though it was running at my terminal. I ultimately had to use a friend's computer to finish this assignment.
 
 ## Part D. Wizard the device
@@ -148,7 +149,8 @@ This video takes the viewer through a user drinking water throughout the day usi
 
 **Please indicate anyone you collaborated with on this Lab.**
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
-I mainly worked on this aloine with some assistance from Brandt Beckerman for shooting the videos.
+
+I mainly worked on this alone with some assistance from Brandt Beckerman for shooting the videos.
 
 # Staging Interaction, Part 2 
 
