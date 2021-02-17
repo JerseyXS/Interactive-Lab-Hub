@@ -163,6 +163,10 @@ You will be assigned three partners from another group. Go to their github pages
 
 **Summarize feedback from your partners here.**
 
+One piece of feedback I got from my partners was to better illustrate the use-case for this device. It was not totally clear to the user that the goal of this device was to encourage hydration for the user. Instead, my partner interpreted the purpose of the device as a spill-detector. One suggestion I got to mitigate this is to rework the storytelling from the video to emphasize the benefit to the user more than the product itself.
+
+Another piece of feedback I got was to think about changing the orientation of the light so that it sits at the bottom of the cup rather than in the middle. This would provide for a sleeker interface that maximized the utility of the glass. Additionally, I could incorprate more than just visual cues for to nudge the user's behavior, such as sounds or vibrations. 
+
 ## Make it your own
 
 Do last week’s assignment again, but this time: 
