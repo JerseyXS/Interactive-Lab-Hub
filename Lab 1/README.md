@@ -150,7 +150,7 @@ This video takes the viewer through a user drinking water throughout the day usi
 **Please indicate anyone you collaborated with on this Lab.**
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
 
-I mainly worked on this alone with some assistance from Brandt Beckerman for shooting the videos.
+I worked on the design process alone and got feedback from Shivani Doshi, Nicole Zhang, and Brandt Beckerman on the design of the device.
 
 # Staging Interaction, Part 2 
 
