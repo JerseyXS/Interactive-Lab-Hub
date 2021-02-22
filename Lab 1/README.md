@@ -175,3 +175,75 @@ Do last week’s assignment again, but this time:
 3) We will be grading with an emphasis on creativity. 
 
 **Document everything here.**
+
+### Deliverables for this lab are: 
+1. Storyboard
+1. Sketches/photos of costumed device
+1. Any reflections you have on the process.
+1. Video sketch of the prototyped interaction.
+1. Submit these in the lab1 folder of your class [Github page], either as links or uploaded files. Each group member should post their own copy of the work to their own Lab Hub, even if some of the work is the same for each person in the group.
+
+## Part A. Plan 
+
+_Setting:_ Where is this interaction happening? (e.g., a jungle, the kitchen) When is it happening?
+_Players:_ Who is involved in the interaction? Who else is there? If you reflect on the design of current day interactive devices like the Amazon Alexa, it’s clear they didn’t take into account people who had roommates, or the presence of children. Think through all the people who are in the setting.
+_Activity:_ What is happening between the actors?
+_Goals:_ What are the goals of each player? (e.g., jumping to a tree, opening the fridge). 
+
+**Describe your setting, players, activity and goals here.**
+
+
+
+Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
+**Include a picture of your storyboard here**
+
+
+Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
+**Summarize feedback you got here.**
+
+
+## Part B. Act out the Interaction
+
+Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
+
+**Are there things that seemed better on paper than acted out?**
+
+**Are there new ideas that occur to you or your collaborators that come up from the acting?**
+
+
+## Part C. Prototype the device
+
+
+## Part D. Wizard the device
+Take a little time to set up the wizarding set-up that allows for someone to remotely control the device while someone acts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
+
+**Include your first attempts at recording the set-up video here.**
+
+
+Now, change the goal within the same setting, and update the interaction with the paper prototype. 
+
+**Show the follow-up work here.**
+
+
+## Part E. Costume the device
+
+Only now should you start worrying about what the device should look like. Develop a costume so that you can use your phone as this device.
+
+Think about the setting of the device: is the environment a place where the device could overheat? Is water a danger? Does it need to have bright colors in an emergency setting?
+
+
+
+**Include sketches of what your device might look like here.**
+
+
+**What concerns or opportunitities are influencing the way you've designed the device to look?**
+
+
+
+## Part F. Record
+
+**Take a video of your prototyped interaction.**
+
+
+**Please indicate anyone you collaborated with on this Lab.**
+Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
