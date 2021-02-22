@@ -220,29 +220,16 @@ Overall, the acting pointed out potential design oversights, but the device itse
 See previous section of lab.
 
 ## Part D. Wizard the device
-Take a little time to set up the wizarding set-up that allows for someone to remotely control the device while someone acts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
-
-**Include your first attempts at recording the set-up video here.**
-
-
-Now, change the goal within the same setting, and update the interaction with the paper prototype. 
-
-**Show the follow-up work here.**
 
 
 ## Part E. Costume the device
 
-Only now should you start worrying about what the device should look like. Develop a costume so that you can use your phone as this device.
-
-Think about the setting of the device: is the environment a place where the device could overheat? Is water a danger? Does it need to have bright colors in an emergency setting?
-
-
 
 **Include sketches of what your device might look like here.**
-
+![prototype_sketch](IMG_3149.jpg "prototyped device sketch")
 
 **What concerns or opportunitities are influencing the way you've designed the device to look?**
-
+This device needs to be aesthetically appealing enough to serve double-duty as the user's furniture in their bedroom. Additionally, it needs enough surface area to both reliable charge multiple devices while keeping its utility as a tabletop surface. Finally, the sunrise light has to strike a balance between being big enough for the user to see the light without overburdening their senses. 
 
 
 ## Part F. Record
