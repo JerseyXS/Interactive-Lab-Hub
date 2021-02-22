@@ -203,7 +203,7 @@ Sketch a storyboard of the interactions you are planning. It does not need to be
 
 Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
 **Summarize feedback you got here.**
-During lab section, I got positive feedback from my group. They told me that this helped reducet he negative impact smartphones have on sleep hygeine. Additionally, the white noise feature was much-needed for an apartment style building like The House where the walls do not necessarily filter out sounds from other units or the surrounding city. My group encouraged me to focus on the usability of the design, which is what inspired me to make the whole surface compatible with wireless charging.
+During lab section, I got positive feedback from my group. They really liked the positive impact a device like this might have on their sleep hygeine. Additionally, the white noise feature was much-needed for an apartment style building like The House where the walls do not necessarily filter out sounds from other units or the surrounding city. My group encouraged me to focus on the usability of the design, which is what inspired me to make the whole surface compatible with wireless charging. This feedback also challenged me to come up with a way to turn on/off white noise without the user needing to touch the device itself.
 
 
 ## Part B. Act out the Interaction
@@ -211,16 +211,19 @@ During lab section, I got positive feedback from my group. They told me that thi
 Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
 
 **Are there things that seemed better on paper than acted out?**
-One thing that is easily overlooked is how the device sits relative to the user. Many different users may be used to different height nightstands/beds, and this design consideration is important to note in order to maximize compatibility across many different bedroom layouts.
+One thing that is easily overlooked is how the device sits relative to the user. Many different users may be used to different height nightstands/beds, and this design consideration is important to note in order to maximize compatibility across many different bedroom layouts. I also initially tried verbal cues to turn on/off features, but found nonverbal cues to be faster and more appropriate for a drowsy user.
 
 **Are there new ideas that occur to you or your collaborators that come up from the acting?**
-Overall, the acting pointed out potential design oversights, but the device itself seems to be pretty well-suited to the task. We will move forward with prototyping.
+Overall, the acting pointed out potential design oversights, but the device itself seems to be pretty well-suited to the task. As a result, I will move forward with prototyping.
 
 
 ## Part C. Prototype the device
-See previous section of lab.
+I was only able to get Tinkerbelle to work by using the node version. Perhaps this might be a good workaround for the Python issues others were facing.
+
 
 ## Part D. Wizard the device
+Here, I demo two interactions with the "paper prototype" version of the device.
+https://youtu.be/j0kHazHHSCE
 
 
 ## Part E. Costume the device
