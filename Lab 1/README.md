@@ -233,7 +233,7 @@ https://youtu.be/j0kHazHHSCE
 ![prototype_sketch](IMG_3149.jpg "prototyped device sketch")
 
 **What concerns or opportunitities are influencing the way you've designed the device to look?**
-This device needs to be aesthetically appealing enough to serve double-duty as the user's furniture in their bedroom. Additionally, it needs enough surface area to both reliable charge multiple devices while keeping its utility as a tabletop surface. Finally, the sunrise light has to strike a balance between being big enough for the user to see the light without overburdening their senses. 
+This device needs to be aesthetically appealing enough to serve double-duty as the user's furniture in their bedroom. Additionally, it needs enough surface area to both reliably charge multiple devices while keeping its utility as a tabletop surface. Finally, the sunrise light has to strike a balance between being big enough for the user to see the light without overburdening their senses. 
 
 
 ## Part F. Record
