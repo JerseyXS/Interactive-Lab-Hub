@@ -210,12 +210,14 @@ Present your idea to the other people in your breakout room. You can just get fe
 Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
 
 **Are there things that seemed better on paper than acted out?**
+One thing that is easily overlooked is how the device sits relative to the user. Many different users may be used to different height nightstands/beds, and this design consideration is important to note in order to maximize compatibility across many different bedroom layouts.
 
 **Are there new ideas that occur to you or your collaborators that come up from the acting?**
+Overall, the acting pointed out potential design oversights, but the device itself seems to be pretty well-suited to the task. We will move forward with prototyping.
 
 
 ## Part C. Prototype the device
-
+See previous section of lab.
 
 ## Part D. Wizard the device
 Take a little time to set up the wizarding set-up that allows for someone to remotely control the device while someone acts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
