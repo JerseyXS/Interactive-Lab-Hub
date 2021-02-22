@@ -239,7 +239,8 @@ This device needs to be aesthetically appealing enough to serve double-duty as t
 ## Part F. Record
 
 **Take a video of your prototyped interaction.**
-
+Here is the final prototype going through the following user actions 1.) Charge phone/Airpods 2.) Remotely turn on white noise 3.) Go through progressions of light emitted.
+https://youtu.be/41yPT0mDxXs
 
 **Please indicate anyone you collaborated with on this Lab.**
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
