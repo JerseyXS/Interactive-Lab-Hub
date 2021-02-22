@@ -198,11 +198,12 @@ This interaction is happening in the user's bedroom. The players involved are si
 
 Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
 **Include a picture of your storyboard here**
-
+![storyboard](IMG_C38C1C92DED9-1.jpeg "prototype storyboard")
 
 
 Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
 **Summarize feedback you got here.**
+During lab section, I got positive feedback from my group. They told me that this helped reducet he negative impact smartphones have on sleep hygeine. Additionally, the white noise feature was much-needed for an apartment style building like The House where the walls do not necessarily filter out sounds from other units or the surrounding city. My group encouraged me to focus on the usability of the design, which is what inspired me to make the whole surface compatible with wireless charging.
 
 
 ## Part B. Act out the Interaction
