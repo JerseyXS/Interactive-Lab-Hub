@@ -191,11 +191,14 @@ _Activity:_ What is happening between the actors?
 _Goals:_ What are the goals of each player? (e.g., jumping to a tree, opening the fridge). 
 
 **Describe your setting, players, activity and goals here.**
+This device is a smart nightstand with an integrated wireless charging tabletop and sunrise clock. The nightstand wakes up the user with light instead of sound. By doing this, the nightstand mimics the progression of dawn, changing from red to orange to white before the user's alarm sounds. This gradual exposure to blue light from red light helps the user wake up naturally in line with how our ancestors woke up with the sun.
 
+This interaction is happening in the user's bedroom. The players involved are simply the user and the device itself. If there were other people in the user's home, they would have to think about how this device might wake them up at a different time than what than they desire (as expected with any alarm). There are two activities happening here. The first is the clock's progression from nighttime (red light), to dusk (blue light), to morning (white light). The other activity is the user's pre-bedtime routine which consists of putting his/her phone down to charge and turning on the white-noise functionality. Both of these actions happen through auditory cues rather than visual cues. Ultimately, the goal for the user is to have a well-rested night of sleep with the help of this device.
 
 
 Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
 **Include a picture of your storyboard here**
+
 
 
 Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
