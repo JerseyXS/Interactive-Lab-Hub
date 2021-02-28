@@ -154,6 +154,8 @@ Does time have to be linear?  How do you measure a year? [In daylights? In midni
 
 Can you make time interactive? You can look in `screen_test.py` for examples for how to use the buttons.
 
+Yes, I was able to make mine interactive by having the color of the display clock change depending on whether or not the user was holding down one of the two buttons on the screen.
+
 **A copy of your code should be in your Lab 2 Github repo.**
 
 you can push to your personal github repo by adding the files here, commiting and pushing.
@@ -171,8 +173,9 @@ After that git will ask you to login to your github account to upload.
 
 **Take a video of your PiClock.**
 
+
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
-
+For Part 2, I would like the top button to cycle through different formats and fonts of the clock. I would also like the bottom button to cycle through different colors for the clock. This will allow the user to set their perfect clock preference using a mix of designs and colors that match their personality.
 
 
