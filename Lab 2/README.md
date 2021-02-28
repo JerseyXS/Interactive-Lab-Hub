@@ -138,6 +138,7 @@ You can look in `stats.py` for how to display text on the screen
 
 You can look in `image.py` for an example of how to display an image on the screen. Can you make it switch to another image when you push one of the buttons?
 
+I was able to modify the image.py file and have it switch to another image when pressing one of the buttons. 
 
 
 ## Part D. 
