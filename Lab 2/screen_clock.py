@@ -1,4 +1,4 @@
-from time import strftime, sleep, time
+from time import strftime, sleep
 import subprocess
 import digitalio
 import board
@@ -71,4 +71,4 @@ while True:
 
     # Display image.
     disp.image(image, rotation)
-    time.sleep(1)
+    sleep(1)
