@@ -62,6 +62,7 @@ backlight.switch_to_output()
 backlight.value = True
 
 while True:
+    y = top
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
