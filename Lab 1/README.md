@@ -103,6 +103,9 @@ You will be using your smartphone as a stand-in for the device you are prototypi
 Code for the "Tinkerbelle" tool, and instructions for setting up the server and your phone are [here](https://github.com/FAR-Lab/tinkerbelle).
 
 We invented this tool for this lab! 
+
+If you run into technical issues with this tool, you can also use a light switch, dimmer, etc. that you can can manually or remotely control.
+
 **Give us feedback on Tinkerbelle.**
 
 I had issues with getting tinkerbelle to run on my computer. I could not connect to the app through my browser even though it was running at my terminal. I ultimately had to use a friend's computer to finish this assignment.
