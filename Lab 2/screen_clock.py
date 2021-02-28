@@ -78,7 +78,7 @@ while True:
     if buttonB.value and not buttonA.value:  # just button A pressed
         draw.text((x, y), strftime("%m/%d/%Y %H:%M:%S"), font=font, fill="#004EFF") # bright blue
     elif buttonA.value and not buttonB.value:  # just button B pressed
-        draw.text((x, y), strftime("%m/%d/%Y %H:%M:%S"), font=font, fill="#FFFFF")  # white
+        draw.text((x, y), strftime("%m/%d/%Y %H:%M:%S"), font=font, fill="#FFFFFF")  # white
     else:
         draw.text((x, y), strftime("%m/%d/%Y %H:%M:%S"), font=font, fill="#FFFF00")  # default is bright yellow
 
