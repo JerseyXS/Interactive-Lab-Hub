@@ -97,5 +97,44 @@ y = scaled_height // 2 - height // 2
 image = image.crop((x, y, x + width, y + height))
 
 # Display image.
-disp.image(image)
+# disp.image(image)
+
+
+image2 = Image.open("blue.jpg")
+backlight = digitalio.DigitalInOut(board.D22)
+backlight.switch_to_output()
+backlight.value = True
+
+# Scale the image to the smaller screen dimension
+image_ratio = image2.width / image2.height
+screen_ratio = width / height
+if screen_ratio < image_ratio:
+    scaled_width = image2.width * height // image2.height
+    scaled_height = height
+else:
+    scaled_width = width
+    scaled_height = image2.height * width // image2.width
+image2 = image2.resize((scaled_width, scaled_height), Image.BICUBIC)
+
+# Crop and center the image
+x = scaled_width // 2 - width // 2
+y = scaled_height // 2 - height // 2
+image2 = image2.crop((x, y, x + width, y + height))
+
+
+
+
+
+# Main loop:
+while True:
+    if buttonA.value and buttonB.value:
+        backlight.value = False  # turn off backlight
+    else:
+        backlight.value = True  # turn on backlight
+    if buttonB.value and not buttonA.value:  # just button A pressed
+        disp.image(image)
+    if buttonA.value and not buttonB.value:  # just button B pressed
+        disp.image(image2)
+    if not buttonA.value and not buttonB.value:  # none pressed
+        display.fill(color565(0, 255, 0))  # green
 
