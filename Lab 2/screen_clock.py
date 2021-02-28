@@ -1,4 +1,4 @@
-import time
+from time import strftime, sleep
 import subprocess
 import digitalio
 import board
