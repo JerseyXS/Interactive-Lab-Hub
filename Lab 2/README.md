@@ -178,4 +178,5 @@ After that git will ask you to login to your github account to upload.
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
 For Part 2, I would like the top button to cycle through different formats and fonts of the clock. I would also like the bottom button to cycle through different colors for the clock. This will allow the user to set their perfect clock preference using a mix of designs and colors that match their personality.
 
-
+![sketch1](IMG_0205.jpg "sketch 1")
+![sketch2](IMG_0206.PNG "sketch 2")
