@@ -70,18 +70,32 @@ buttonB = digitalio.DigitalInOut(board.D24)
 buttonA.switch_to_input()
 buttonB.switch_to_input()
 
+toggleA = False
+toggleB = False
+
 while True:
     y = top
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    
+#     COMMENTING THIS OUT FOR NOW
+#     if buttonB.value and not buttonA.value:  # just button A pressed
+#         draw.text((x, y), strftime("%m/%d/%Y %H:%M:%S"), font=font, fill="#004EFF") # bright blue
+#     elif buttonA.value and not buttonB.value:  # just button B pressed
+#         draw.text((x, y), strftime("%m/%d/%Y %H:%M:%S"), font=font, fill="#f5821f")  # orange
+#     else:
+#         draw.text((x, y), strftime("%m/%d/%Y %H:%M:%S"), font=font, fill="#FFFF00")  # default is bright yellow
 
     if buttonB.value and not buttonA.value:  # just button A pressed
+        toggleA = !toggleA
+    if buttonA.value and not buttonB.value:  # just button B pressed
+        toggleB = !toggleB
+        
+    if togglaA:
         draw.text((x, y), strftime("%m/%d/%Y %H:%M:%S"), font=font, fill="#004EFF") # bright blue
-    elif buttonA.value and not buttonB.value:  # just button B pressed
-        draw.text((x, y), strftime("%m/%d/%Y %H:%M:%S"), font=font, fill="#f5821f")  # orange
     else:
-        draw.text((x, y), strftime("%m/%d/%Y %H:%M:%S"), font=font, fill="#FFFF00")  # default is bright yellow
+        draw.text((x, y), strftime("%m/%d/%Y %H:%M:%S"), font=font, fill="#f5821f")  # orange
 
     # Display image.
     disp.image(image, rotation)
-    sleep(0.1)
+    sleep(0.05)
