@@ -87,9 +87,9 @@ while True:
 #         draw.text((x, y), strftime("%m/%d/%Y %H:%M:%S"), font=font, fill="#FFFF00")  # default is bright yellow
 
     if buttonB.value and not buttonA.value:  # just button A pressed
-        toggleA = !toggleA
+        toggleA = not toggleA
     if buttonA.value and not buttonB.value:  # just button B pressed
-        toggleB = !toggleB
+        toggleB = not toggleB
         
     if toggleA:
         draw.text((x, y), strftime("%m/%d/%Y %H:%M:%S"), font=font, fill="#004EFF") # bright blue
