@@ -91,7 +91,7 @@ while True:
     if buttonA.value and not buttonB.value:  # just button B pressed
         toggleB = !toggleB
         
-    if togglaA:
+    if toggleA:
         draw.text((x, y), strftime("%m/%d/%Y %H:%M:%S"), font=font, fill="#004EFF") # bright blue
     else:
         draw.text((x, y), strftime("%m/%d/%Y %H:%M:%S"), font=font, fill="#f5821f")  # orange
