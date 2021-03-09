@@ -56,7 +56,7 @@ x = 0
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 font1 = ImageFont.truetype("Paskowy.ttf", 55)
 font2 = ImageFont.truetype("ABSTRACT.TTF", 10)
-font3 = ImageFont.truetype("Vermin_Vibes_1989.ttf", 24)
+font3 = ImageFont.truetype("Vermin_Vibes_1989.ttf", 26)
 font4 = ImageFont.truetype("baby_blocks.ttf", 15)
 
 # Turn on the backlight
