@@ -187,8 +187,14 @@ For Part 2, I would like the top button to cycle through different formats and f
 ## Prep for Part 2
 
 1. Pick up remaining parts for kit.
+Done
 
 2. Look at and give feedback on the Part G. for at least 2 other people in the class (and get 2 people to comment on your Part G!)
+
+
+One piece of feedback I got from Hortense on my prototype was implementing the concept of state-management of my clock. Instead of having to hold down the button to change the color, I was given the recommendation to manage a color state and font state using a separate variable. This insight gave me the ability to implement my vision for the updated screen clock. I created two list objects to hold the different fonts and colors I wanted to display. In the while loop, I changed the logic to allow the user to cycle through each state upon a button press.
+
+Additionally, I was told by another peer, Shivani, that the some colors of the clock on the screen were hard to read. This makes sense since the screen is black, and darker colors would not have as much contrast. I was given the suggestion to add lighter colors to my prototype to improve readability for the user.
 
 # Lab 2 Part 2
 
@@ -196,8 +202,11 @@ Pull Interactive Lab Hub updates to your repo.
 
 Modify the code from last week's lab to make a new visual interface for your new clock. You may [extend the Pi](Extending%20the%20Pi.md) by adding sensors or buttons, but this is not required.
 
+While I experimented with the sensors described in "Extend the Pi" during lab, I did not implement them into my screen clock prototype.
+
 As always, make sure you document contributions and ideas from others explicitly in your writeup.
 
 You are permitted (but not required) to work in groups and share a turn in; you are expected to make equal contribution on any group work you do, and N people's group project should look like N times the work of a single person's lab. What each person did should be explicitly documented. Make sure the page for the group turn in is linked to your Interactive Lab Hub page. 
 
+I implemented a new version of my screen clock based on the sketches I outlined in the previous lab activity. A video of my new prototype can be found here: https://www.youtube.com/watch?v=0Hih71JwCLo
 
