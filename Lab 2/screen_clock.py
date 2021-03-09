@@ -72,6 +72,10 @@ buttonB.switch_to_input()
 
 toggleA = False
 toggleB = False
+color_list = ["#004EFF", "#f5821f", "#2a9d8f"]
+font_list = []
+color_index = 0
+font_index = 0
 
 while True:
     y = top
@@ -87,14 +91,19 @@ while True:
 #         draw.text((x, y), strftime("%m/%d/%Y %H:%M:%S"), font=font, fill="#FFFF00")  # default is bright yellow
 
     if buttonB.value and not buttonA.value:  # just button A pressed
-        toggleA = not toggleA
+        color_index += 1
+        color_index = color_index % 3
     if buttonA.value and not buttonB.value:  # just button B pressed
-        toggleB = not toggleB
+        font_index += 1
+        font_index = font_index % 3
+    
+    draw.text((x, y), strftime("%m/%d/%Y %H:%M:%S"), font=font, fill=color_list[color_index])
         
-    if toggleA:
-        draw.text((x, y), strftime("%m/%d/%Y %H:%M:%S"), font=font, fill="#004EFF") # bright blue
-    else:
-        draw.text((x, y), strftime("%m/%d/%Y %H:%M:%S"), font=font, fill="#f5821f")  # orange
+        
+#     if toggleA:
+#         draw.text((x, y), strftime("%m/%d/%Y %H:%M:%S"), font=font, fill="#004EFF") # bright blue
+#     else:
+#         draw.text((x, y), strftime("%m/%d/%Y %H:%M:%S"), font=font, fill="#f5821f")  # orange
 
     # Display image.
     disp.image(image, rotation)
