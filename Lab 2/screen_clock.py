@@ -54,7 +54,10 @@ x = 0
 # Alternatively load a TTF font.  Make sure the .ttf font file is in the
 # same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
-font = ImageFont.truetype("Paskowy.ttf", 55)
+font1 = ImageFont.truetype("Paskowy.ttf", 55)
+font2 = ImageFont.truetype("ABSTRACT.TTF", 55)
+font3 = ImageFont.truetype("Vermin_Vibes_1989.ttf", 55)
+font4 = ImageFont.truetype("baby_blocks.ttf", 55)
 
 # Turn on the backlight
 backlight = digitalio.DigitalInOut(board.D22)
@@ -72,8 +75,8 @@ buttonB.switch_to_input()
 
 toggleA = False
 toggleB = False
-color_list = ["#004EFF", "#f5821f", "#2a9d8f"]
-font_list = []
+color_list = ["#004EFF", "#f5821f", "#2a9d8f", "#ffff00"]
+font_list = [font1, font2, font3, font4]
 color_index = 0
 font_index = 0
 
@@ -97,7 +100,7 @@ while True:
         font_index += 1
         font_index = font_index % 3
     
-    draw.text((x, y), strftime("%m/%d/%Y %H:%M:%S"), font=font, fill=color_list[color_index])
+    draw.text((x, y), strftime("%m/%d/%Y %H:%M:%S"), font=font_list[font_index], fill=color_list[color_index])
         
         
 #     if toggleA:
