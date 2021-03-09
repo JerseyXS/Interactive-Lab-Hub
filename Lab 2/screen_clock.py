@@ -55,9 +55,9 @@ x = 0
 # same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 font1 = ImageFont.truetype("Paskowy.ttf", 55)
-font2 = ImageFont.truetype("ABSTRACT.TTF", 20)
-font3 = ImageFont.truetype("Vermin_Vibes_1989.ttf", 35)
-font4 = ImageFont.truetype("baby_blocks.ttf", 35)
+font2 = ImageFont.truetype("ABSTRACT.TTF", 5)
+font3 = ImageFont.truetype("Vermin_Vibes_1989.ttf", 28)
+font4 = ImageFont.truetype("baby_blocks.ttf", 20)
 
 # Turn on the backlight
 backlight = digitalio.DigitalInOut(board.D22)
