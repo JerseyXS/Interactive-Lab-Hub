@@ -68,9 +68,13 @@ Create a system that runs on the Raspberry Pi that takes in one or more sensors 
 
 1. Sketch ideas for what you'll work on in lab on Wednesday.
 
+![sketch2](IMG_DEE84B0CC3AE-1.jpeg "sketch")
+
 ## Share your idea sketches with Zoom Room mates and get feedback
 
 *what was the feedback? Who did it come from?*
+
+In my Zoom Room, Shivani liked the idea of creating a musical instrument using the one's own voice. She suggested having a baseline bpm for the sample's playback so that it is easier for the user to understand what the purpose of this instrument is. Sam made the awesome suggestion of potentially adding the accelerometer to module the pitch of the sample once I got the proximity feature working. This added feature could add some musical depth and add to the enjoyment of this interactive device.
 
 ## Prototype your system
 
