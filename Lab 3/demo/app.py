@@ -9,6 +9,7 @@ import time
 import board
 import busio
 import adafruit_mpu6050
+import adafruit_apds9960.apds9960
 import json
 import socket
 
@@ -16,9 +17,18 @@ import signal
 import sys
 from queue import Queue
 
- 
 i2c = busio.I2C(board.SCL, board.SDA)
-mpu = adafruit_mpu6050.MPU6050(i2c)
+sensor = adafruit_apds9960.apds9960.APDS9960(i2c)
+
+sensor.enable_proximity = True
+
+# while True:
+# 	prox = sensor.proximity
+# 	print(prox)
+# 	time.sleep(0.2)
+
+# i2c = busio.I2C(board.SCL, board.SDA)
+# mpu = adafruit_mpu6050.MPU6050(i2c)
 
 hostname = socket.gethostname()
 hardware = 'plughw:2,0'
