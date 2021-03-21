@@ -9,7 +9,7 @@ import time
 import board
 import busio
 import adafruit_mpu6050
-import adafruit_apds9960.apds9960
+import adafruit_apds9960
 import json
 import socket
 
