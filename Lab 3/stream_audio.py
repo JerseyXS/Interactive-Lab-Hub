@@ -26,7 +26,7 @@ player=p.open(format = pyaudio.paInt16,rate=RATE,channels=1, output=True, frames
 
 while True:            #Used to continuously stream audio
      data=np.fromstring(stream.read(chunk,exception_on_overflow = False),dtype=np.int16)
-     audio_datalist_set_volume(data, 50)
+     audio_datalist_set_volume(data, 90)
      player.write(data,chunk)
     
 #closes streams
