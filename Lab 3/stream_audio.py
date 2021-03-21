@@ -1,18 +1,19 @@
 import pyaudio
 import numpy as np
 
-def audio_datalist_set_volume(datalist, volume):
-    """ Change value of list of audio chunks """
-    sound_level = (volume / 100.)
+# def audio_datalist_set_volume(datalist, volume):
+#     """ Change value of list of audio chunks """
+#     sound_level = (volume / 100.)
 
-    for i in range(len(datalist)):
-        chunk = np.fromstring(datalist[i], np.int16)
+#     for i in range(len(datalist)):
+#         chunk = np.fromstring(datalist[i], np.int16)
 
-        chunk = chunk * sound_level
+#         chunk = chunk * sound_level
 
-        datalist[i] = chunk.astype(np.int16)
+#         datalist[i] = chunk.astype(np.int16)
 
-chunk=4096
+chunk=1024
+# 4096
 RATE=44100
 
 p=pyaudio.PyAudio()
@@ -26,7 +27,7 @@ player=p.open(format = pyaudio.paInt16,rate=RATE,channels=1, output=True, frames
 
 while True:            #Used to continuously stream audio
      data=np.fromstring(stream.read(chunk,exception_on_overflow = False),dtype=np.int16)
-     audio_datalist_set_volume(data, 90)
+#      audio_datalist_set_volume(data, 90)
      player.write(data,chunk)
     
 #closes streams
