@@ -12,9 +12,10 @@ import numpy as np
 
 #         datalist[i] = chunk.astype(np.int16)
 
-chunk=1024
+chunk=8192
 # 4096
-RATE=44100
+RATE=48000
+# 44100
 
 p=pyaudio.PyAudio()
 
