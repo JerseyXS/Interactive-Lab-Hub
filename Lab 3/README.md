@@ -93,6 +93,9 @@ One wrinkle I ran into with this implementation was that my Eavesdrop feature of
 
 *Include videos or screencaptures of both the system and the controller.*
 
+Video of final prototype: https://youtu.be/lAL0y_azDlY
+Bonus video of audio streaming (demonstrating the mic works): https://youtu.be/L76QrlEOD6c
+
 ## Test the system
 Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
 I was able to get Brandt Beckerman and Ahaan Parekh to interact with my system. I have summarized their feedback in the responses below.
@@ -100,11 +103,14 @@ I was able to get Brandt Beckerman and Ahaan Parekh to interact with my system. 
 Answer the following:
 
 ### What worked well about the system and what didn't?
-*your answer here*
+
+I was able to get the baseline functionality outlined in the sketches decently well. My participants were able to successfully modulate the sample playback using their hand. However, due to the way I called the speak function in my implementation, I did not realize that my full sample would need to be played back in its entirety before re-starting playback again. Ideally, I would want the user's interaction with the proximity sensor to interrupt the current playback and start it over, similar to how real samplers work. This advanced audio functionality would likely require a more sophistticated handling of audio clips in python. 
+
+Additionally, my system was not as intuitive as I would have hoped. Since the microphone is attached to the board, it is difficult to accurately pick up the user's voice samples. The proximity sensor also has a bit of a learning curve for new users. 
 
 ### What worked well about the controller and what didn't?
 
-*your answer here*
+In general, the controller worked pretty well for the pusposes of this lab. I was able to modify the graph to show the user's proximity in real-time. This allowed me as the wizard to understand how to make the device react to the user's input without interfering with the user experience. One issue I had with the controller stems from the handling of audio clips. I was not able to get the Eavesdrop feature to work in spite of following the demo instructions carefully. In an ideal world, I would have preferred the wizard to be able to see the soundwave of the user's voice sample after they record it. I would have also preferred to have the wizard play the sound back to the user like a soundboard.
 
 ### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
 
