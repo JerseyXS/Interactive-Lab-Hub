@@ -51,10 +51,13 @@ pi@ixe00:~/$ python server.py
 ```
 From a remote browser on the same network, check to make sure your webserver is working by going to [http://ixe00.local:5000]()
 
+I confirmed that this works.
 
 ## Demo
 
 In the [demo directory](./demo), you will find an example wizard of oz project you may use as a template. **You do not have to** feel free to get creative. In that project, you can see how audio and sensor data is streamed from the Pi to a wizard controller that runs in the browser. You can control what system says from the controller as well.
+
+I used this demo for my lab and modified it to fit my use-case of sampling and playing back sampled audio.
 
 ## Optional
 
@@ -89,7 +92,7 @@ The system should:
 
 In an age where music performance and production is increasingly digitized, I sought to make a device that leverages technology to bring the physical element back to the creative process of musicmaking. This device is a simple prototype of what I would call a "proximity" sampler. Essentially, this device captures any spoken audio that the user provides via the microphone and plays it back to the user through the connected speaker. The kicker here is that the Pi's onboard sensors will modulate the soudwave that is played back based on the input data. Concretely, this would mean that the user could play their own sample back like a musical instrument by holding their hand closer or farther away from the proximity sensor. This allows additional depth in the creative sampling process by giving the user the ability to add rhythmic or percussive aspects to their desired spoken-word sample.
 
-One wrinkle I ran into with this implementation was that my Eavesdrop feature of the demo file was not working. This was in spite of following all of the directions and ensuring that I was accessing the correct port for the usb microphone. In fact, I was able to demonstrate that my microphone was not the issue in my bonus Pyaudio clip. I tried asking the IDD Slack channel if anyone was able to get Eavesdrop to work for their demo file, but did not receive any responses. As a result, I had to proceed with a demo focused on text-input from the user for the samples. 
+One wrinkle I ran into with this implementation was that my Eavesdrop feature of the demo file was not working. This was in spite of following all of the directions and ensuring that I was accessing the correct port for the usb microphone. In fact, I was able to demonstrate that my microphone was not the issue in my bonus Pyaudio clip. I tried asking the IDD Slack channel if anyone was able to get Eavesdrop to work for their demo file, but only received one response from a peer which did not end up fixing my issue. I also recalled that Ilan said it was very difficult to get audio to work well with Python in a hosted environment. As a result, I proceeded with a demo focused on text-input from the user for the samples. 
 
 *Include videos or screencaptures of both the system and the controller.*
 
@@ -100,7 +103,7 @@ One wrinkle I ran into with this implementation was that my Eavesdrop feature of
 
 Video of final prototype: https://youtu.be/lAL0y_azDlY
 
-Bonus video of audio streaming (demonstrating the mic works): https://youtu.be/L76QrlEOD6c
+Bonus video of audio streaming (demonstrating that the mic works for the purposes of this lab): https://youtu.be/L76QrlEOD6c
 
 ## Test the system
 Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
