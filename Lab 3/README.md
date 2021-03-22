@@ -85,12 +85,15 @@ The system should:
 
 *Document how the system works*
 
-In an age where music performance and production is increasingly digitized, I sought to make a device that leverages technology to bring the physical element back to the creative process of musicmaking. This device is a simple prototype of what I would call a "proximity" sampler. Essentially, this device captures any audio that the user provides via the microphone and plays it back to the user through the connected speaker. The kicker here is that the Pi's onboard sensors will modulate the soudwave that is played back based on the input data. Concretely, this would mean that the user could play their own sample back like an instrument by holding their hand closer or farther away from the proximity sensor. This allows additional depth in the creative sampling process by giving the user the ability to add rhythmic or percussive aspects to their desired sample.
+In an age where music performance and production is increasingly digitized, I sought to make a device that leverages technology to bring the physical element back to the creative process of musicmaking. This device is a simple prototype of what I would call a "proximity" sampler. Essentially, this device captures any spoken audio that the user provides via the microphone and plays it back to the user through the connected speaker. The kicker here is that the Pi's onboard sensors will modulate the soudwave that is played back based on the input data. Concretely, this would mean that the user could play their own sample back like a musical instrument by holding their hand closer or farther away from the proximity sensor. This allows additional depth in the creative sampling process by giving the user the ability to add rhythmic or percussive aspects to their desired spoken-word sample.
+
+One wrinkle I ran into with this implementation was that my Eavesdrop feature of the demo file was not working. This was in spite of following all of the directions and ensuring that I was accessing the correct port for the usb microphone. In fact, I was able to demonstrate that my microphone was not the issue in my bonus Pyaudio clip. I tried asking the IDD Slack channel if anyone was able to get Eavesdrop to work for their demo file, but did not receive any responses. As a result, I had to proceed with a demo focused on text-input from the user for the samples. 
 
 *Include videos or screencaptures of both the system and the controller.*
 
 ## Test the system
 Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
+I was able to get Brandt Beckerman and Ahaan Parekh to interact with my system. I have summarized their feedback in the responses below.
 
 Answer the following:
 
