@@ -54,7 +54,7 @@ def test_connect():
 
 @socketio.on('ping-gps')
 def handle_message(val):
-    print(sensor.proximity)
+    # print(sensor.proximity)
     emit('pong-gps', sensor.proximity) 
 
 
