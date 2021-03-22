@@ -84,6 +84,7 @@ The system should:
 * require participants to speak to it. 
 
 *Document how the system works*
+
 In an age where music performance and production is increasingly digitized, I sought to make a device that leverages technology to bring the physical element back to the creative process of musicmaking. This device is a simple prototype of what I would call a "proximity" sampler. Essentially, this device captures any audio that the user provides via the microphone and plays it back to the user through the connected speaker. The kicker here is that the Pi's onboard sensors will modulate the soudwave that is played back based on the input data. Concretely, this would mean that the user could play their own sample back like an instrument by holding their hand closer or farther away from the proximity sensor. This allows additional depth in the creative sampling process by giving the user the ability to add rhythmic or percussive aspects to their desired sample.
 
 *Include videos or screencaptures of both the system and the controller.*
