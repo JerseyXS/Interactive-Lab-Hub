@@ -93,7 +93,7 @@ One wrinkle I ran into with this implementation was that my Eavesdrop feature of
 
 *Include videos or screencaptures of both the system and the controller.*
 
-![controller](Screen Shot 2021-03-21 at 9.01.38 PM.png "controller")
+![controller](controller.png "controller")
 
 ![setup](IMG_0208.jpg "setup")
 
