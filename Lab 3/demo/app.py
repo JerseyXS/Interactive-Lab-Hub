@@ -45,7 +45,7 @@ audio_stream = Popen("/usr/bin/cvlc alsa://"+hardware+" --sout='#transcode{vcode
 def handel_speak(val):
     while True:
         call(f"espeak '{val}'", shell=True)
-        time.sleep(1/(1+sensor.proximity))
+        time.sleep(1/(1+(sensor.proximity*1000)))
 
 @socketio.on('connect')
 def test_connect():
