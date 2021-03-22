@@ -31,6 +31,8 @@ You can also play audio files directly with `aplay filename`.
 
 After looking through this folder do the same for the `speech2text` folder. In particular, look at `test_words.py` and make sure you understand how the vocab is defined. Then try `./vosk_demo_mic.sh`
 
+Video of working demos can be found here: https://youtu.be/ODtvudZVtHw
+
 ## Serving Pages
 
 In Lab 1 we served a webpage with flask. In this lab you may find it useful to serve a webpage for the controller on a remote device. Here is a simple example of a webserver.
