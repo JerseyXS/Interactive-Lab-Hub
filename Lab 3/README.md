@@ -94,6 +94,7 @@ One wrinkle I ran into with this implementation was that my Eavesdrop feature of
 *Include videos or screencaptures of both the system and the controller.*
 
 Video of final prototype: https://youtu.be/lAL0y_azDlY
+
 Bonus video of audio streaming (demonstrating the mic works): https://youtu.be/L76QrlEOD6c
 
 ## Test the system
