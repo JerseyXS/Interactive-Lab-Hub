@@ -4,9 +4,13 @@
 import board
 import busio
 import adafruit_ssd1306
+import adafruit_mpu6050
 
 # Create the I2C interface.
 i2c = busio.I2C(board.SCL, board.SDA)
+
+# Create mpu object
+mpu = adafruit_mpu6050.MPU6050(i2c)
 
 # Create the SSD1306 OLED class.
 # The first two parameters are the pixel width and pixel height.  Change these
@@ -56,32 +60,36 @@ oled.fill(0)
 # we just blanked the framebuffer. to push the framebuffer onto the display, we call show()
 oled.show()
 while True:
-    # undraw the previous circle
-    draw_circle(center_x, center_y, radius, col=0)
+#     # undraw the previous circle
+#     draw_circle(center_x, center_y, radius, col=0)
 
-    # if bouncing off right
-    if center_x + radius >= oled.width:
-        # start moving to the left
-        x_inc = -1
-    # if bouncing off left
-    elif center_x - radius < 0:
-        # start moving to the right
-        x_inc = 1
+#     # if bouncing off right
+#     if center_x + radius >= oled.width:
+#         # start moving to the left
+#         x_inc = -1
+#     # if bouncing off left
+#     elif center_x - radius < 0:
+#         # start moving to the right
+#         x_inc = 1
 
-    # if bouncing off top
-    if center_y + radius >= oled.height:
-        # start moving down
-        y_inc = -1
-    # if bouncing off bottom
-    elif center_y - radius < 0:
-        # start moving up
-        y_inc = 1
+#     # if bouncing off top
+#     if center_y + radius >= oled.height:
+#         # start moving down
+#         y_inc = -1
+#     # if bouncing off bottom
+#     elif center_y - radius < 0:
+#         # start moving up
+#         y_inc = 1
 
-    # go more in the current direction
-    center_x += x_inc
-    center_y += y_inc
+#     # go more in the current direction
+#     center_x += x_inc
+#     center_y += y_inc
 
-    # draw the new circle
-    draw_circle(center_x, center_y, radius)
-    # show all the changes we just made
+#     # draw the new circle
+#     draw_circle(center_x, center_y, radius)
+#     # show all the changes we just made
+    led.draw_text(0,25,mpu.acceleration,1)
+    
+    
+    
     oled.show()
