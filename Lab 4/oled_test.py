@@ -88,7 +88,7 @@ while True:
 #     # draw the new circle
 #     draw_circle(center_x, center_y, radius)
 #     # show all the changes we just made
-    led.draw_text(0,25,mpu.acceleration,1)
+    oled.draw_text(0,25,mpu.acceleration,1)
     
     
     
