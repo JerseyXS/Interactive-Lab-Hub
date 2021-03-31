@@ -88,7 +88,22 @@ while True:
 #     # draw the new circle
 #     draw_circle(center_x, center_y, radius)
 #     # show all the changes we just made
-    oled.draw_text(0,25,mpu.acceleration,1)
+       
+    # Load default font.
+    font = ImageFont.load_default()
+
+    # Draw Some Text
+    text = mpu.acceleration
+    (font_width, font_height) = font.getsize(text)
+    draw.text(
+        (oled.width // 2 - font_width // 2, oled.height // 2 - font_height // 2),
+        text,
+        font=font,
+        fill=255,
+    )
+
+    # Display image
+    oled.image(image)
     
     
     
