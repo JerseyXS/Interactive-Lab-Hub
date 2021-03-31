@@ -89,8 +89,6 @@ while True:
 #     draw_circle(center_x, center_y, radius)
 #     # show all the changes we just made
        
-    # Load default font.
-    font = ImageFont.load_default()
 
     # Draw Some Text
     text = mpu.acceleration
