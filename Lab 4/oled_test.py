@@ -1,10 +1,12 @@
 # SPDX-FileCopyrightText: 2021 ladyada for Adafruit Industries
 # SPDX-License-Identifier: MIT
 
+from time import strftime, sleep
 import board
 import busio
 import adafruit_ssd1306
 import adafruit_mpu6050
+from PIL import Image, ImageDraw, ImageFont
 
 # Create the I2C interface.
 i2c = busio.I2C(board.SCL, board.SDA)
@@ -88,6 +90,9 @@ while True:
 #     # draw the new circle
 #     draw_circle(center_x, center_y, radius)
 #     # show all the changes we just made
+
+    # Load default font.
+    font = ImageFont.load_default()
        
 
     # Draw Some Text
