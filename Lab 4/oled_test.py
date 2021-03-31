@@ -115,7 +115,7 @@ while True:
        
 
     # Draw Some Text
-    text = string(mpu.acceleration)
+    text = str(mpu.acceleration)
     (font_width, font_height) = font.getsize(text)
     draw.text(
         (oled.width // 2 - font_width // 2, oled.height // 2 - font_height // 2),
