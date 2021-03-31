@@ -8,6 +8,8 @@ import adafruit_ssd1306
 import adafruit_mpu6050
 from PIL import Image, ImageDraw, ImageFont
 
+BORDER = 5
+
 # Create the I2C interface.
 i2c = busio.I2C(board.SCL, board.SDA)
 
