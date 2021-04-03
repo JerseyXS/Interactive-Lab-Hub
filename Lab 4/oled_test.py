@@ -140,10 +140,10 @@ while True:
        
 
     # Do the math
-    degrees = final_time * mpu.gyro.x
+    degrees = final_time * mpu.gyro[0]
         
     # Draw Some Text
-    text = str(mpu.gyro.x)
+    text = str(mpu.gyro[0])
     (font_width, font_height) = font.getsize(text)
     draw.text(
         (oled.width // 2 - font_width // 2, oled.height // 2 - font_height // 2),
