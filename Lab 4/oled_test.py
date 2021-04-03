@@ -6,6 +6,7 @@ import board
 import busio
 import adafruit_ssd1306
 import adafruit_mpu6050
+import adafruit_rgb_display.st7789 as st7789
 from PIL import Image, ImageDraw, ImageFont
 
 BORDER = 5
@@ -20,6 +21,15 @@ mpu = adafruit_mpu6050.MPU6050(i2c)
 # The first two parameters are the pixel width and pixel height.  Change these
 # to the right size for your display!
 oled = adafruit_ssd1306.SSD1306_I2C(128, 32, i2c)
+
+# these setup the code for our buttons and the backlight and tell the pi to treat the GPIO pins as digitalIO vs analogIO
+backlight = digitalio.DigitalInOut(board.D22)
+backlight.switch_to_output()
+backlight.value = True
+buttonA = digitalio.DigitalInOut(board.D23)
+buttonB = digitalio.DigitalInOut(board.D24)
+buttonA.switch_to_input()
+buttonB.switch_to_input()
 
 
 # Helper function to draw a circle from a given position with a given radius
