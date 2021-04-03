@@ -116,6 +116,7 @@ while True:
         t1 = time.time()
         print("ending time activated")
         final_time = t1 - t0
+        grab_reading = mpu.gyro[2]
         print("time in seconds is: " + str(final_time))
         
     # Create blank image for drawing.
@@ -140,7 +141,7 @@ while True:
        
 
     # Do the math
-    degrees = final_time * mpu.gyro[2]
+    degrees = final_time * grab_reading
         
     # Draw Some Text
     text = str(degrees)
