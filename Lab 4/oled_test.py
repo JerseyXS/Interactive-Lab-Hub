@@ -105,6 +105,8 @@ radius = 8
 oled.fill(0)
 # we just blanked the framebuffer. to push the framebuffer onto the display, we call show()
 oled.show()
+
+final_time = 0
 while True:
        
     if buttonB.value and not buttonA.value:  # just button A pressed
