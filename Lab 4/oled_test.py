@@ -143,7 +143,7 @@ while True:
     degrees = final_time * mpu.gyro[0]
         
     # Draw Some Text
-    text = str(mpu.gyro[0])
+    text = str(degrees)
     (font_width, font_height) = font.getsize(text)
     draw.text(
         (oled.width // 2 - font_width // 2, oled.height // 2 - font_height // 2),
