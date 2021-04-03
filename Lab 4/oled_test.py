@@ -137,8 +137,11 @@ while True:
     font = ImageFont.load_default()
        
 
+    # Do the math
+    degrees = 
+        
     # Draw Some Text
-    text = str(mpu.acceleration)
+    text = str(mpu.gyro.x)
     (font_width, font_height) = font.getsize(text)
     draw.text(
         (oled.width // 2 - font_width // 2, oled.height // 2 - font_height // 2),
