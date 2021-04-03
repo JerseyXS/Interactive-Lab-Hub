@@ -1,7 +1,8 @@
 # SPDX-FileCopyrightText: 2021 ladyada for Adafruit Industries
 # SPDX-License-Identifier: MIT
 
-from time import strftime, sleep, time
+from time import strftime, sleep
+import time
 import board
 import busio
 import digitalio
