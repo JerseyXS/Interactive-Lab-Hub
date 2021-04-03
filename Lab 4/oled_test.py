@@ -138,7 +138,7 @@ while True:
        
 
     # Do the math
-    degrees = 
+    degrees = final_time * mpu.gyro.x
         
     # Draw Some Text
     text = str(mpu.gyro.x)
