@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: 2021 ladyada for Adafruit Industries
 # SPDX-License-Identifier: MIT
 
-from time import strftime, sleep
+from time import strftime, sleep, time
 import board
 import busio
 import adafruit_ssd1306
@@ -64,35 +64,16 @@ oled.fill(0)
 # we just blanked the framebuffer. to push the framebuffer onto the display, we call show()
 oled.show()
 while True:
-#     # undraw the previous circle
-#     draw_circle(center_x, center_y, radius, col=0)
-
-#     # if bouncing off right
-#     if center_x + radius >= oled.width:
-#         # start moving to the left
-#         x_inc = -1
-#     # if bouncing off left
-#     elif center_x - radius < 0:
-#         # start moving to the right
-#         x_inc = 1
-
-#     # if bouncing off top
-#     if center_y + radius >= oled.height:
-#         # start moving down
-#         y_inc = -1
-#     # if bouncing off bottom
-#     elif center_y - radius < 0:
-#         # start moving up
-#         y_inc = 1
-
-#     # go more in the current direction
-#     center_x += x_inc
-#     center_y += y_inc
-
-#     # draw the new circle
-#     draw_circle(center_x, center_y, radius)
-#     # show all the changes we just made
-
+       
+    if buttonB.value and not buttonA.value:  # just button A pressed
+        t0 = time.time()
+        print("starting time activated")
+    if buttonA.value and not buttonB.value:  # just button B pressed
+        t1 = time.time()
+        print("ending time activated")
+        final_time = t1 - t0
+        print(f"time in seconds is"{final_time}
+        
     # Create blank image for drawing.
     # Make sure to create image with mode '1' for 1-bit color.
     image = Image.new("1", (oled.width, oled.height))
