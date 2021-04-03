@@ -4,6 +4,7 @@
 from time import strftime, sleep, time
 import board
 import busio
+import digitalio
 import adafruit_ssd1306
 import adafruit_mpu6050
 import adafruit_rgb_display.st7789 as st7789
