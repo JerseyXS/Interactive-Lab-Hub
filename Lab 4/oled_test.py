@@ -22,6 +22,24 @@ mpu = adafruit_mpu6050.MPU6050(i2c)
 # to the right size for your display!
 oled = adafruit_ssd1306.SSD1306_I2C(128, 32, i2c)
 
+# Create the ST7789 display:
+disp = st7789.ST7789(
+    spi,
+    cs=cs_pin,
+    dc=dc_pin,
+    rst=reset_pin,
+    baudrate=BAUDRATE,
+    width=135,
+    height=240,
+    x_offset=53,
+    y_offset=40,
+)
+
+# Turn on the backlight
+backlight = digitalio.DigitalInOut(board.D22)
+backlight.switch_to_output()
+backlight.value = True
+
 # these setup the code for our buttons and the backlight and tell the pi to treat the GPIO pins as digitalIO vs analogIO
 backlight = digitalio.DigitalInOut(board.D22)
 backlight.switch_to_output()
