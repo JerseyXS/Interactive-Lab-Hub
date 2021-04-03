@@ -72,7 +72,7 @@ while True:
         t1 = time.time()
         print("ending time activated")
         final_time = t1 - t0
-        print(f"time in seconds is"{final_time}
+        print(f"time in seconds is"{final_time})
         
     # Create blank image for drawing.
     # Make sure to create image with mode '1' for 1-bit color.
