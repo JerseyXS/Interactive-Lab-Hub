@@ -107,6 +107,7 @@ oled.fill(0)
 oled.show()
 
 final_time = 0
+grab_reading = 0
 while True:
        
     if buttonB.value and not buttonA.value:  # just button A pressed
