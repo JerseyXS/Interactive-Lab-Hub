@@ -127,6 +127,15 @@ Here is an example:
 
 
 Make a paper display for your project that communicates the state of the Pi and a sensor. Ideally you should design it so that you can slide the Pi out to work on the circuit or programming, and then slide it back in and reattach a few wires to be back in operation.
+
+### Overview of My Project
+
+Inspired by the interfaces of popular battle-royale videogames (see screenshots below), I wanted to create a device that brings this interaction to a real-world application. Similar to battle-royale type games, paintball is a sport that relies heavily on teamwork and communication to spot and eliminate enemies. One challenge in the real world is articulating to teammates where an enemy is during the heat-of-battle. My goal with this device is to create a heads-up display that emulates the compass functionality found on popular battle royale games for the paintball field.
+
+[pictures of fortnite/warzone]
+
+Beginning of video also gives a brief overview of the "why" behind the project
+**https://youtu.be/ufDbFqaocHI?t=0 (00:00)**
  
 **a. Document the design for your paper display.** (e.g. if you had to make it again from scratch, what information would you need?). Include interim iterations (or at least tell us about them).
 
@@ -134,10 +143,13 @@ Since this is a wearable heads-up display, there are actually 2 displays I am wo
 
 Using a long cable, I then connect this wrist-mounted Pi to a smaller display that exists in the user's sight-of-line. This display indicates to the user the state of the Pi regarding what direction they are looking as measured in degrees.
 
+[picture of paper display from multiple angles]
+
 **b. Make a video of your paper display in action.**
 **https://youtu.be/ufDbFqaocHI?t=55 (00:54)**
 
 **c. Explain the rationale for the design.** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
+
 Since this device is to be used on a paintball field, the device ideally needs to be operable hands-free. It also needs to blend in with the player's outfit which tends to be tactical and black. Finally, the design of this device cannot interefere with the player's ability to see enemies on the field. As a result, I made sure the oled display was mounted high-up in the user's line-of-sight.
 
 One challenge I had was striking the right balance between readability of the screen and size of the prototype. Initially, I had the screen much closer to the player's face, but this made it nearly impossible for the player to comfortably look up and read the device. I ended up having to move the oled screen pretty far out forward in order to make it readable. If I were to design a production version of this device, I would definitely need to consider the readability of the screen at an extremely close distance. A projector-style HUD might be able to accomplish this design objective.
@@ -149,6 +161,7 @@ One challenge I had was striking the right balance between readability of the sc
 
 Design a system with the Pi and anything from your kit with a focus on form, and materiality. The "stuff" that enclose the system should be informed by the desired interaction. What would a computer made of rocks be like? How would an ipod made of grass behave? Would a roomba made of gold clean your floor any differently?
 
+I discuss these aspects in the section of my video linked below
 **https://youtu.be/ufDbFqaocHI?t=55 (00:54)**
 
 **a. document the material prototype.** Include candidates that were considered even if they were set aside later.
@@ -162,17 +175,19 @@ As alluded to in the video, this device is designed with the intention of being 
 In designing this system, I had to strike a balance between ease-of-prototyping and practicality. I settled on cardboard for the vast majority of the system's enclosures since it is easy to manipulate into the shapes I need for it to be a wearable. If I were designing a production version of this device, I would need to focus on materials that would be able to withstand getting hit by a 280 meters/second gel paintball capsule. Impact-resistant plastic tends to be the material of choice in this type of application. 
 
 
-
 ### Part 2.
 
 Following exploration and reflection from Part 1, complete the "looks like," "works like" and "acts like" prototypes for your design.
 
 Reiterating:
 ### Deliverables for this lab are: 
-1. Sketches/photos of device designs 
-2. "Looks like" prototypes: show us what how the device should look, feel, sit, weigh, etc. **https://youtu.be/ufDbFqaocHI?t=16 (00:16)**
-3. "Works like" prototypes: show us what the device can do **https://youtu.be/ufDbFqaocHI?t=135 (02:15)**
-4. "Acts like" prototypes: videos/storyboards/other means of showing how a person would interact with the device **https://youtu.be/ufDbFqaocHI?t=215 (03:35)**
-5. Submit these in the lab 4 folder of your class [Github page], either as links or uploaded files. Each group member should post their own copy of the work to their own Lab Hub, even if some of the work is the same for each person in the group.
+1. Sketches/photos of device designs: 360-degree look of the system on a person **https://youtu.be/ufDbFqaocHI?t=207**
+
+[sketch photo]
+
+3. "Looks like" prototypes: show us what how the device should look, feel, sit, weigh, etc. **https://youtu.be/ufDbFqaocHI?t=16 (00:16)**
+4. "Works like" prototypes: show us what the device can do **https://youtu.be/ufDbFqaocHI?t=135 (02:15)**
+5. "Acts like" prototypes: videos/storyboards/other means of showing how a person would interact with the device **https://youtu.be/ufDbFqaocHI?t=215 (03:35)**
+6. Submit these in the lab 4 folder of your class [Github page], either as links or uploaded files. Each group member should post their own copy of the work to their own Lab Hub, even if some of the work is the same for each person in the group.
 
 
