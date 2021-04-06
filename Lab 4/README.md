@@ -147,7 +147,6 @@ Since this is a wearable heads-up display, there are actually 2 displays I am wo
 
 Using a long cable, I then connect this wrist-mounted Pi to a smaller display that exists in the user's sight-of-line. This display indicates to the user the state of the Pi regarding what direction they are looking as measured in degrees.
 
-[picture of paper display from multiple angles]
 
 ![sketch2](pp1.JPG "sketch")
 
