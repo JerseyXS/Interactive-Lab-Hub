@@ -149,12 +149,16 @@ One challenge I had was striking the right balance between readability of the sc
 
 Design a system with the Pi and anything from your kit with a focus on form, and materiality. The "stuff" that enclose the system should be informed by the desired interaction. What would a computer made of rocks be like? How would an ipod made of grass behave? Would a roomba made of gold clean your floor any differently?
 
+**https://youtu.be/ufDbFqaocHI?t=55 (00:54)**
+
 **a. document the material prototype.** Include candidates that were considered even if they were set aside later.
+
 I used the following materials to build this system: flat-brimmed baseball cap, cardboard, black ducktape, tactical wriststrap, raspberry pi, accelermeter, oled screen, hot glue, extra-long connector cable.
 
 As alluded to in the video, this device is designed with the intention of being deployed on a paintball field during a game. I used materials that are already utilized in paintball gear with the goal of blending in with the rest of a player's setup and, ideally, being able to handle water. 
 
 **b. explain the selection.**
+
 In designing this system, I had to strike a balance between ease-of-prototyping and practicality. I settled on cardboard for the vast majority of the system's enclosures since it is easy to manipulate into the shapes I need for it to be a wearable. If I were designing a production version of this device, I would need to focus on materials that would be able to withstand getting hit by a 280 meters/second gel paintball capsule. Impact-resistant plastic tends to be the material of choice in this type of application. 
 
 
