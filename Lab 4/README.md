@@ -132,7 +132,11 @@ Make a paper display for your project that communicates the state of the Pi and 
 
 Inspired by the interfaces of popular battle-royale videogames (see screenshots below), I wanted to create a device that brings this interaction to a real-world application. Similar to battle-royale type games, paintball is a sport that relies heavily on teamwork and communication to spot and eliminate enemies. One challenge in the real world is articulating to teammates where an enemy is during the heat-of-battle. My goal with this device is to create a heads-up display that emulates the compass functionality found on popular battle royale games for the paintball field.
 
-[pictures of fortnite/warzone]
+![picture](fort1.JPG "sketch")
+
+![sketch2](fort2.WEBP "sketch")
+
+![sketch2](wz.JPG "sketch")
 
 Beginning of video also gives a brief overview of the "why" behind the project
 **https://youtu.be/ufDbFqaocHI?t=0 (00:00)**
@@ -144,6 +148,12 @@ Since this is a wearable heads-up display, there are actually 2 displays I am wo
 Using a long cable, I then connect this wrist-mounted Pi to a smaller display that exists in the user's sight-of-line. This display indicates to the user the state of the Pi regarding what direction they are looking as measured in degrees.
 
 [picture of paper display from multiple angles]
+
+![sketch2](pp1.JPG "sketch")
+
+![sketch2](pp2.JPG "sketch")
+
+![sketch2](pp3.JPG "sketch")
 
 **b. Make a video of your paper display in action.**
 **https://youtu.be/ufDbFqaocHI?t=55 (00:54)**
@@ -183,7 +193,15 @@ Reiterating:
 ### Deliverables for this lab are: 
 1. Sketches/photos of device designs: 360-degree look of the system on a person **https://youtu.be/ufDbFqaocHI?t=207**
 
-[sketch photo]
+![sketch2](drawing.jpeg "sketch")
+
+![sketch2](system1.JPG "sketch")
+
+![sketch2](system2.JPG "sketch")
+
+![sketch2](system3.JPG "sketch")
+
+![sketch2](system5.JPG "sketch")
 
 3. "Looks like" prototypes: show us what how the device should look, feel, sit, weigh, etc. **https://youtu.be/ufDbFqaocHI?t=16 (00:16)**
 4. "Works like" prototypes: show us what the device can do **https://youtu.be/ufDbFqaocHI?t=135 (02:15)**
