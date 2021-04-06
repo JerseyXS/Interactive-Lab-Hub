@@ -135,7 +135,7 @@ Since this is a wearable heads-up display, there are actually 2 displays I am wo
 Using a long cable, I then connect this wrist-mounted Pi to a smaller display that exists in the user's sight-of-line. This display indicates to the user the state of the Pi regarding what direction they are looking as measured in degrees.
 
 **b. Make a video of your paper display in action.**
-**https://youtu.be/ufDbFqaocHI (00:54)**
+**https://youtu.be/ufDbFqaocHI?t=55 (00:54)**
 
 **c. Explain the rationale for the design.** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
 Since this device is to be used on a paintball field, the device ideally needs to be operable hands-free. It also needs to blend in with the player's outfit which tends to be tactical and black. Finally, the design of this device cannot interefere with the player's ability to see enemies on the field. As a result, I made sure the oled display was mounted high-up in the user's line-of-sight.
@@ -166,9 +166,9 @@ Following exploration and reflection from Part 1, complete the "looks like," "wo
 Reiterating:
 ### Deliverables for this lab are: 
 1. Sketches/photos of device designs 
-2. "Looks like" prototypes: show us what how the device should look, feel, sit, weigh, etc. **https://youtu.be/ufDbFqaocHI (00:16)**
-3. "Works like" prototypes: show us what the device can do **https://youtu.be/ufDbFqaocHI (02:15)**
-4. "Acts like" prototypes: videos/storyboards/other means of showing how a person would interact with the device **https://youtu.be/ufDbFqaocHI (03:35)**
+2. "Looks like" prototypes: show us what how the device should look, feel, sit, weigh, etc. **https://youtu.be/ufDbFqaocHI?t=16 (00:16)**
+3. "Works like" prototypes: show us what the device can do **https://youtu.be/ufDbFqaocHI?t=135 (02:15)**
+4. "Acts like" prototypes: videos/storyboards/other means of showing how a person would interact with the device **https://youtu.be/ufDbFqaocHI?t=215 (03:35)**
 5. Submit these in the lab 4 folder of your class [Github page], either as links or uploaded files. Each group member should post their own copy of the work to their own Lab Hub, even if some of the work is the same for each person in the group.
 
 
