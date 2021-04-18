@@ -110,11 +110,21 @@ Here is Adafruit's directions on using Raspberry Pi and the Pi camera with Teach
 
 Alternative less steps option is [here](https://github.com/FAR-Lab/TensorflowonThePi).
 
+I ended up using a model trained by Teachable Machines for this lab. I used the shortened instructions provided by David to install Tensorflow onto the Pi. The goal of my model is to classify whether or not a user is correctly wearing his/her mask. There are three classes I trained: 1) Mask properly worn 2) Mask not properly worn 3) Unknown (Mask not detected at all). I trained these three classes using a variety of masks and head positions through the Teachable Machines interface. In all, I used about 700 images to train my model, and this was sufficient to produce pretty good results when testing the model.
+
+[picture of model]
+
 #### PyTorch  
 As a note, the global Python install contains also a PyTorch installation. That can be experimented with as well if you are so inclined.
 
 ### Part B
 ### Construct a simple interaction.
+
+In the age of COVID-19, businesses are tasked with "checking in" patrons by taking their temperature and ensuring they are wearing a mask. As the economy continues to open up , businesses will face a large influx of customers who they need to vet against public health guidelines.
+
+I designed a simple system that aims to automate the check-in process for patrons by automatically checking 1) temperature and 2) mask is worn properly. For the purposes of this lab, I am assuming the temperature check works correctly and will be focusing my machine learning model on gauging whether or not the user is wearing a mask in accordance with public safety guidelines. Concretly, I want the model to ensure that customers who expose their noses over their mask are flagged and denied entry until they adjust their mask.
+
+[show pictures of checkins and improper vs proper wearing of a mask]
 
 Pick one of the models you have tried, pick a class of objects, and experiment with prototyping an interaction.
 This can be as simple as the boat detector earlier.
