@@ -140,21 +140,24 @@ I designed a simple system that aims to automate the check-in process for patron
 Now flight test your interactive prototype and **note your observations**:
 For example:
 1. When does it what it is supposed to do?
-The system does what it is supposed to do under what I would describe as ideal circumstances. In other words, when the user is directly in front of the camera under good lighting, the system is able to accurately determine if they are wearing their mask properly. 
+The system does what it is supposed to do under what I would describe as ideal circumstances. In other words, when the user is directly in front of the camera under good lighting, the system is able to accurately determine if they are wearing their mask properly. Because the system requires good lighting, I attached a ringlight to my camera using double-sided tape. This ensures that I can maximize the likelihood of the system picking up a good reading from the camera data.
 
-3. When does it fail?
+2. When does it fail?
 The system fails when it encounters a situation that falls outside of the bounds of the training data. For example, if the lighting is not good, the system may not be able to detect a mask at all even if the user is wearing one. Similarly, if the user is wearing a mask that looks substantially different than the 4 masks I trained the model with, it may not accurately classify what is happening.
 
-5. When it fails, why does it fail?
+3. When it fails, why does it fail?
 The reason the system fails when it does comes down to the robustness of the machine learning model. I only trained the model with a relatively small set of data encompassing 4 masks and a variety of head positions. I did not train with a wide variety of users, backgrounds, or lighting conditions. If one of these other parameters veers too far off of the training data coverage, the model will most likely fail.
 
-7. Based on the behavior you have seen, what other scenarios could cause problems?
+4. Based on the behavior you have seen, what other scenarios could cause problems?
 As alluded to earlier, situations where the system has to deal with 1.) poor lighting 2.) a wide variety of masks 3.) a wide variety of different users with different facial structures could all be scenarios that could cause problems.
 
 **Think about someone using the system. Describe how you think this will work.**
 1. Are they aware of the uncertainties in the system?
-1. How bad would they be impacted by a miss classification?
+A typical user will most likely not be aware of uncertainties in the system. Most users expect a user-facing device to be robust enough to deploy into production. They are not necessarily going to know why the underlying model might be misreading their face and denying them entry to the venue. This is important to keep mind of and is the reason why I included a section on the user interface where they can call for help and have a person intervene via video-conference.
+
+2. How bad would they be impacted by a miss classification?
 A misclassificaiton would mean that the user would be denied to the business they are patronizing. Not only would this be anxiety-inducing, but it could also mean lost revenue for the business and time wasted for the end-user.
+
 3. How could change your interactive system to address this?
 I could add a human layer to this similar to how automatic parking gate work. In the event that a user cannot enter, they can his a button to call an attendant who may be able to help their situation or correct mistakes that the camera is making by viewing the video feed directly.
 
