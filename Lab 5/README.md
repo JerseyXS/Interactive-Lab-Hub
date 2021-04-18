@@ -125,6 +125,10 @@ In the age of COVID-19, businesses are tasked with "checking in" patrons by taki
 I designed a simple system that aims to automate the check-in process for patrons by automatically checking 1) temperature and 2) mask is worn properly. For the purposes of this lab, I am assuming the temperature check works correctly and will be focusing my machine learning model on gauging whether or not the user is wearing a mask in accordance with public safety guidelines. Concretly, I want the model to ensure that customers who expose their noses over their mask are flagged and denied entry until they adjust their mask.
 
 [show pictures of checkins and improper vs proper wearing of a mask]
+![sketch2](temp_check.jpg "sketch")
+
+![sketch2](mask_guidance.jpg "sketch")
+
 
 Pick one of the models you have tried, pick a class of objects, and experiment with prototyping an interaction.
 This can be as simple as the boat detector earlier.
@@ -159,8 +163,6 @@ In addition, I could design the system so that it can handle a wider variety of 
 ![sketch2](DSCF5278.jpg "sketch")
 
 ![sketch2](DSCF5282.jpg "sketch")
-
-![sketch2](IMG_3665 2.JPG "sketch")
 
 Now that you have experimented with one or more of these sense-making systems **characterize their behavior**.
 During the lecture, we mentioned questions to help characterize a material:
