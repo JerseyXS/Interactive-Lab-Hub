@@ -110,7 +110,7 @@ Here is Adafruit's directions on using Raspberry Pi and the Pi camera with Teach
 
 Alternative less steps option is [here](https://github.com/FAR-Lab/TensorflowonThePi).
 
-I ended up using a model trained by Teachable Machines for this lab. I used the shortened instructions provided by David to install Tensorflow onto the Pi. The goal of my model is to classify whether or not a user is correctly wearing his/her mask. There are three classes I trained: 1) Mask properly worn 2) Mask not properly worn 3) Unknown (Mask not detected at all). I trained these three classes using a variety of masks and head positions through the Teachable Machines interface. In all, I used about 700 images to train my model, and this was sufficient to produce pretty good results when testing the model.
+I ended up using a model trained by Teachable Machines for this lab. I used the shortened instructions provided by David to install Tensorflow onto the Pi. The goal of my model is to classify whether or not a user is correctly wearing his/her mask. There are three classes I trained: 1) Mask properly worn 2) Mask not properly worn 3) Unknown (Mask not detected at all). I trained these three classes using a variety of masks and head positions through the Teachable Machines interface. In all, I used over 1,500 images to train my model, and this was sufficient to produce pretty good results when testing the model.
 
 [picture of model]
 
@@ -182,4 +182,5 @@ https://youtu.be/VkWieoXWfHE
 Following exploration and reflection from Part 1, finish building your interactive system, and demonstrate it in use with a video.
 
 **Include a short video demonstrating the finished result.**
+https://youtu.be/L5C-hokc_RM
 
