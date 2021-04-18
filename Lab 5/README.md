@@ -187,12 +187,16 @@ During the lecture, we mentioned questions to help characterize a material:
 * What are other properties/behaviors of X?
 * How does X feel?
 
+I answer all of these questions in the video below.
+
 **Include a short video demonstrating the answers to these questions.**
 https://youtu.be/VkWieoXWfHE
 
 ### Part 2.
 
 Following exploration and reflection from Part 1, finish building your interactive system, and demonstrate it in use with a video.
+
+I demo the full system in the video below.
 
 **Include a short video demonstrating the finished result.**
 https://youtu.be/L5C-hokc_RM
