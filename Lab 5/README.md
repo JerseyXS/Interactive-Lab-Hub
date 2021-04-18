@@ -154,6 +154,14 @@ In addition, I could design the system so that it can handle a wider variety of 
 ### Part D
 ### Characterize your own Observant system
 
+![sketch2](DSCF5273.jpg "sketch")
+
+![sketch2](DSCF5278.jpg "sketch")
+
+![sketch2](DSCF5282.jpg "sketch")
+
+![sketch2](IMG_3665 2.JPG "sketch")
+
 Now that you have experimented with one or more of these sense-making systems **characterize their behavior**.
 During the lecture, we mentioned questions to help characterize a material:
 * What can you use X for?
