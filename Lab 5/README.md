@@ -112,7 +112,7 @@ Alternative less steps option is [here](https://github.com/FAR-Lab/TensorflowonT
 
 I ended up using a model trained by Teachable Machines for this lab. I used the shortened instructions provided by David to install Tensorflow onto the Pi. The goal of my model is to classify whether or not a user is correctly wearing his/her mask. There are three classes I trained: 1) Mask properly worn 2) Mask not properly worn 3) Unknown (Mask not detected at all). I trained these three classes using a variety of masks and head positions through the Teachable Machines interface. In all, I used over 1,500 images to train my model, and this was sufficient to produce pretty good results when testing the model.
 
-[picture of model]
+![sketch2](teachable.png "sketch")
 
 #### PyTorch  
 As a note, the global Python install contains also a PyTorch installation. That can be experimented with as well if you are so inclined.
@@ -124,7 +124,6 @@ In the age of COVID-19, businesses are tasked with "checking in" patrons by taki
 
 I designed a simple system that aims to automate the check-in process for patrons by automatically checking 1) temperature and 2) mask is worn properly. For the purposes of this lab, I am assuming the temperature check works correctly and will be focusing my machine learning model on gauging whether or not the user is wearing a mask in accordance with public safety guidelines. Concretly, I want the model to ensure that customers who expose their noses over their mask are flagged and denied entry until they adjust their mask.
 
-[show pictures of checkins and improper vs proper wearing of a mask]
 ![sketch2](temp_check.jpg "sketch")
 
 ![sketch2](mask_guidance.jpg "sketch")
