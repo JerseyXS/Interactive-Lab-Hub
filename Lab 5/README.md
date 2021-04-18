@@ -120,6 +120,12 @@ As a note, the global Python install contains also a PyTorch installation. That 
 ### Part B
 ### Construct a simple interaction.
 
+Pick one of the models you have tried, pick a class of objects, and experiment with prototyping an interaction.
+This can be as simple as the boat detector earlier.
+Try out different interactions outputs and inputs.
+**Describe and detail the interaction, as well as your experimentation.**
+
+
 In the age of COVID-19, businesses are tasked with "checking in" patrons by taking their temperature and ensuring they are wearing a mask. As the economy continues to open up , businesses will face a large influx of customers who they need to vet against public health guidelines.
 
 I designed a simple system that aims to automate the check-in process for patrons by automatically checking 1) temperature and 2) mask is worn properly. For the purposes of this lab, I am assuming the temperature check works correctly and will be focusing my machine learning model on gauging whether or not the user is wearing a mask in accordance with public safety guidelines. Concretly, I want the model to ensure that customers who expose their noses over their mask are flagged and denied entry until they adjust their mask.
@@ -128,21 +134,22 @@ I designed a simple system that aims to automate the check-in process for patron
 
 ![sketch2](mask_guidance.jpg "sketch")
 
-
-Pick one of the models you have tried, pick a class of objects, and experiment with prototyping an interaction.
-This can be as simple as the boat detector earlier.
-Try out different interactions outputs and inputs.
-**Describe and detail the interaction, as well as your experimentation.**
-
 ### Part C
 ### Test the interaction prototype
 
 Now flight test your interactive prototype and **note your observations**:
 For example:
 1. When does it what it is supposed to do?
-1. When does it fail?
-1. When it fails, why does it fail?
-1. Based on the behavior you have seen, what other scenarios could cause problems?
+The system does what it is supposed to do under what I would describe as ideal circumstances. In other words, when the user is directly in front of the camera under good lighting, the system is able to accurately determine if they are wearing their mask properly. 
+
+3. When does it fail?
+The system fails when it encounters a situation that falls outside of the bounds of the training data. For example, if the lighting is not good, the system may not be able to detect a mask at all even if the user is wearing one. Similarly, if the user is wearing a mask that looks substantially different than the 4 masks I trained the model with, it may not accurately classify what is happening.
+
+5. When it fails, why does it fail?
+The reason the system fails when it does comes down to the robustness of the machine learning model. I only trained the model with a relatively small set of data encompassing 4 masks and a variety of head positions. I did not train with a wide variety of users, backgrounds, or lighting conditions. If one of these other parameters veers too far off of the training data coverage, the model will most likely fail.
+
+7. Based on the behavior you have seen, what other scenarios could cause problems?
+As alluded to earlier, situations where the system has to deal with 1.) poor lighting 2.) a wide variety of masks 3.) a wide variety of different users with different facial structures could all be scenarios that could cause problems.
 
 **Think about someone using the system. Describe how you think this will work.**
 1. Are they aware of the uncertainties in the system?
