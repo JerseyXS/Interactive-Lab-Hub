@@ -163,6 +163,8 @@ In addition, I could design the system so that it can handle a wider variety of 
 
 ![sketch2](DSCF5282.jpg "sketch")
 
+![sketch2](DSCF5285.jpg "sketch")
+
 Now that you have experimented with one or more of these sense-making systems **characterize their behavior**.
 During the lecture, we mentioned questions to help characterize a material:
 * What can you use X for?
