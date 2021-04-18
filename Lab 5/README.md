@@ -162,7 +162,9 @@ A misclassificaiton would mean that the user would be denied to the business the
 I could add a human layer to this similar to how automatic parking gate work. In the event that a user cannot enter, they can his a button to call an attendant who may be able to help their situation or correct mistakes that the camera is making by viewing the video feed directly.
 
 In addition, I could design the system so that it can handle a wider variety of cases while limited background noise. This can be accomplished with better use of lighting, cleaner backgrounds, use of higher-end cameras, and a wider variety of training data.
+
 5. Are there optimizations you can try to do on your sense-making algorithm.
+I can train the algorithm with more training data and I can train the algorithm with more epochs. Both of these optimizations will likely yield a better performing algorithm in the real-world.
 
 ### Part D
 ### Characterize your own Observant system
