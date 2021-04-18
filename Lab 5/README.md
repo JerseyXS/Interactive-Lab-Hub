@@ -144,8 +144,12 @@ For example:
 **Think about someone using the system. Describe how you think this will work.**
 1. Are they aware of the uncertainties in the system?
 1. How bad would they be impacted by a miss classification?
-1. How could change your interactive system to address this?
-1. Are there optimizations you can try to do on your sense-making algorithm.
+A misclassificaiton would mean that the user would be denied to the business they are patronizing. Not only would this be anxiety-inducing, but it could also mean lost revenue for the business and time wasted for the end-user.
+3. How could change your interactive system to address this?
+I could add a human layer to this similar to how automatic parking gate work. In the event that a user cannot enter, they can his a button to call an attendant who may be able to help their situation or correct mistakes that the camera is making by viewing the video feed directly.
+
+In addition, I could design the system so that it can handle a wider variety of cases while limited background noise. This can be accomplished with better use of lighting, cleaner backgrounds, use of higher-end cameras, and a wider variety of training data.
+5. Are there optimizations you can try to do on your sense-making algorithm.
 
 ### Part D
 ### Characterize your own Observant system
