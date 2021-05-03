@@ -89,7 +89,7 @@ We are designing a smart refrigerator. Unlike current smart refrigerators on the
 
 **2. Diagram the architecture of the system.** Be clear to document where input, output and computation occur, and label all parts and connections. For example, where is the banana, who is the banana player, where does the sound get played, and who is listening to the banana music?
 
-
+![sketch2](IMG_0222.jpg "sketch")
 
 **3. Build a working prototype of the system.** Do think about the user interface: if someone encountered these bananas, would they know how to interact with them? Should they know what to expect? See video:
 
