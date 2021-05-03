@@ -93,10 +93,11 @@ We are designing a smart refrigerator. Unlike current smart refrigerators on the
 
 **3. Build a working prototype of the system.** Do think about the user interface: if someone encountered these bananas, would they know how to interact with them? Should they know what to expect? See video:
 
-In this prototype, a user would be able to see a clear dictionary diagramming the quantity for a given set of ingredients. If their desired recipe already has sufficient ingredients detected, they would simply see a message that confirms they have everything they need. 
+In this system, the interaction is mostly hands-off as the system is designed to be running constantly in the background in order to keep tabs on what a household has in their refrigerator. The only thing the user would have to know is how to check on the latest status of the system through the messaging queue. From the grocery-getter's perspective, they would simply hold items up to the camera in order to update the values for the rest of the household. We designed the interface to intuitively show the user what the Pi sees as well as output the current values to a user-readable dictionary. If their desired recipe already has sufficient ingredients detected, they would simply see a message that confirms they have everything they need. 
 
 **4. Document the working prototype in use.** It may be helpful to record a Zoom session where you should the input in one location clearly causing response in another location.
-
 See video: 
+
+In this video, we built a mock "refrigerator" with ingredients detected by the on-board cv model. We pushed messages to the queue which indicated to the remote user what they still needed to buy in order to cook their desired recipe.
 
 **5. BONUS (Wendy didn't approve this so you should probably ignore it)** get the whole class to run your code and make your distributed system BIGGER.
