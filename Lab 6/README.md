@@ -82,7 +82,7 @@ Glitch is a great tool for prototyping sites, interfaces and web-apps that's wor
 
 Find at least one class (more are okay) partner, and design a distributed application together. 
 
-I worked with Brandt Beckerman for this lab.
+I worked with Brandt Beckerman and Ahaan Parekh for this lab.
 
 **1. Explain your design** For example, if you made a remote controlled banana piano, explain why anyone would want such a thing.
 We are designing a smart refrigerator. Unlike current smart refrigerators on the market, we are building a version that can proactively suggest whether or not the ingredients one has are sufficient for their favorite recipes. We imagine this system would be most helpful in a family househould with multiple residents. A distributed user would be a household resident who is away from the refrigerator, but close to a grocery store. As they shop for groceries, they can select only the items they need (down to the quantity). This design reduces food waste and saves money for all residents of the household.
