@@ -77,9 +77,6 @@ falling = range(10, 0, -1)  # [10...1]
 # Join the ranges together
 pattern = (rising, ba, dum, falling)
 brightness_levels = list(itertools.chain.from_iterable(pattern))
-# Join the ranges together
-pattern2 = (rising, falling)
-brightness_levels2 = list(itertools.chain.from_iterable(pattern2))
 
 def main():
     """Shows basic usage of the Google Calendar API.
@@ -163,20 +160,17 @@ def main():
                     time.sleep(0.005)                               # tiny gap, sets frames to a smooth 200/sec
                 time.sleep(0.8)                                     # waiting time between heartbeats
             else:
-                for level in brightness_levels2:
-                    for x in range(16):
-                        for y in range(16):
-                            h = 135.0  # green
-                            s = 90.0  # saturation at the top of the red scale
-                            v = smile[x, y] * float(level) / 10     # brightness depends on range
-                            r, g, b = colorsys.hsv_to_rgb(h, s, v)  # convert hsv back to RGB
-                            red = int(r * 255.0)                    # makes 0-1 range > 0-255 range
-                            green = int(g * 255.0)
-                            blue = int(b * 255.0)
-                            unicornhathd.set_pixel(x, y, red, green, blue)  # sets pixels on the hat
-                    unicornhathd.show()                             # show the pixels
-                    time.sleep(0.005)                               # tiny gap, sets frames to a smooth 200/sec
-                time.sleep(2)                                     # waiting time between heartbeats
+                 for x in range(16):
+                     for y in range(16):
+                         h = 135.0  # green
+                         s = 90.0  # saturation at the top of the red scale
+                         v = smile[x, y] * float(level) / 10     # brightness depends on range
+                         r, g, b = colorsys.hsv_to_rgb(h, s, v)  # convert hsv back to RGB
+                         red = int(r * 255.0)                    # makes 0-1 range > 0-255 range
+                         green = int(g * 255.0)
+                         blue = int(b * 255.0)
+                         unicornhathd.set_pixel(x, y, red, green, blue)  # sets pixels on the hat
+                 unicornhathd.show()                             # show the pixels
 
     except KeyboardInterrupt:
         print("Press Ctrl-C to terminate while statement")
