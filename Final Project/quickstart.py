@@ -162,14 +162,10 @@ def main():
             else:
                  for x in range(16):
                      for y in range(16):
-                         h = 235.0  # green
-                         s = 255.0  
-                         v = smile[x, y] * 100.0
-                         r, g, b = colorsys.hsv_to_rgb(h, s, v)  # convert hsv back to RGB
-                         red = int(r * 255.0)                    # makes 0-1 range > 0-255 range
-                         green = int(g * 255.0)
-                         blue = int(b * 255.0)
-                         unicornhathd.set_pixel(x, y, red, green, blue)  # sets pixels on the hat
+                         if smile[x][y] != 0:
+                             unicornhathd.set_pixel(x, y, 0, 255, 0)  # sets pixels on the hat
+                         else:
+                             pass
                  unicornhathd.show()                             # show the pixels
 
     except KeyboardInterrupt:
