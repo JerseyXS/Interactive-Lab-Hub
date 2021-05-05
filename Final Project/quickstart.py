@@ -57,6 +57,7 @@ def main():
         start = event['start'].get('dateTime', event['start'].get('date'))
         print(start, event['summary'])
 
+    step = 0
     try:
         while True:
             # Call the Calendar API
