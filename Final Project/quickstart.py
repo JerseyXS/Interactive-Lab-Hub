@@ -158,7 +158,7 @@ def main():
 
     except KeyboardInterrupt:
         print("Press Ctrl-C to terminate while statement")
-        pass
+        unicornhathd.off()
 
 
 if __name__ == '__main__':
