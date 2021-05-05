@@ -45,6 +45,23 @@ stop = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0],
          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
 
+smile = [[0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0],
+         [0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0],
+         [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0],
+         [0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0],
+         [0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0],
+         [0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0],
+         [1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1],
+         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+         [1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1],
+         [0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0],
+         [0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0],
+         [0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0],
+         [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0],
+         [0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0],
+         [0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]]
+
 
 stop = numpy.array(stop)
 go_green = numpy.ones((16, 16))
@@ -148,9 +165,13 @@ def main():
                 for level in brightness_levels2:
                     for x in range(16):
                         for y in range(16):
-                            red = 0
-                            green = 255
-                            blue = 0
+                            h = 0.0  # red
+                            s = 1.0  # saturation at the top of the red scale
+                            v = stop[x, y] * float(level) / 10     # brightness depends on range
+                            r, g, b = colorsys.hsv_to_rgb(h, s, v)  # convert hsv back to RGB
+                            red = int(r * 255.0)                    # makes 0-1 range > 0-255 range
+                            green = int(g * 255.0)
+                            blue = int(b * 255.0)
                             unicornhathd.set_pixel(x, y, red, green, blue)  # sets pixels on the hat
                     unicornhathd.show()                             # show the pixels
                     time.sleep(0.005)                               # tiny gap, sets frames to a smooth 200/sec
