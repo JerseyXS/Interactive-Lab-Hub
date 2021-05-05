@@ -167,7 +167,7 @@ def main():
                     for x in range(16):
                         for y in range(16):
                             h = 135.0  # green
-                            s = 61.0  # saturation at the top of the red scale
+                            s = 90.0  # saturation at the top of the red scale
                             v = smile[x, y] * float(level) / 10     # brightness depends on range
                             r, g, b = colorsys.hsv_to_rgb(h, s, v)  # convert hsv back to RGB
                             red = int(r * 255.0)                    # makes 0-1 range > 0-255 range
