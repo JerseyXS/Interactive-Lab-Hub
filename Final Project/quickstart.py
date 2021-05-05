@@ -1,6 +1,7 @@
 from __future__ import print_function
 import datetime
 from dateutil import parser
+from pytz import timezone
 import os.path
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -27,8 +28,7 @@ unicornhathd.brightness(1)
 # of the Unicorn Hat HD
 unicornhathd.rotation(270)
 
-
-heart = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+stop = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0],
          [0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0],
          [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0],
@@ -45,7 +45,8 @@ heart = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0],
          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
 
-heart = numpy.array(heart)
+
+stop = numpy.array(stop)
 go_green = numpy.ones((16, 16))
 
 # Define the brightness levels for the heartbeat (lower numbers are dimmer)
@@ -84,7 +85,7 @@ def main():
     service = build('calendar', 'v3', credentials=creds)
 
     # Call the Calendar API
-    now = datetime.datetime.utcnow().isoformat() + 'Z'  # 'Z' indicates UTC time
+    now = datetime.datetime.utcnow().isoformat() + 'Z' # 'Z' indicates UTC time
 
     print('Getting the upcoming 10 events')
     events_result = service.events().list(calendarId='primary', timeMin=now,
@@ -98,9 +99,8 @@ def main():
         start = event['start'].get('dateTime', event['start'].get('date'))
         print(start, event['summary'])
 
-    step = 0
     try:
-         while True:
+        while True:
             # Call the Calendar API
             now = datetime.datetime.utcnow().isoformat() + 'Z'  # 'Z' indicates UTC time
             print('Checking if we are in an event...')
@@ -119,40 +119,47 @@ def main():
 
             if not events:
                 print('You are free!')
-                for event in events:
-                         # for debugging
-                         # print(f"JSON: {event}")
-                         # print(f"Start time: {event['start'].get('dateTime')}")
-                         # print(f"End time: {event['end'].get('dateTime')}")
-                         # print(f"Current datetime: {current_time}")
-                         # print(f"Current timestamp: {current_timestamp}")
-                         # print(f"Start datetime: {start_datetime_object}")
-                         # print(f"Start timestamp: {start_timestamp}")
-                         # print(f"End datetime: {end_datetime_object}")
-                         # print(f"End timestamp: {end_timestamp}")
-                         # print(f"Name: {event['summary']}")
-                         # print(f"Did the event start? {current_timestamp >= start_timestamp}")
-                         # print(f"Is the event still going on? {current_timestamp <= end_timestamp}")
+            for event in events:
+                print(current_timestamp >= start_timestamp)
+                print(current_timestamp <= end_timestamp)
+                pass
 
-
+            # logic for display
+            if current_timestamp >= start_timestamp and current_timestamp <= end_timestamp:
             # Go through each brightness level in the pattern
-            for level in brightness_levels:
-                for x in range(16):
-                    for y in range(16):
-                        h = 0.0  # red
-                        s = 1.0  # saturation at the top of the red scale
-                        v = heart[x, y] * float(level) / 10     # brightness depends on range
-                        r, g, b = colorsys.hsv_to_rgb(h, s, v)  # convert hsv back to RGB
-                        red = int(r * 255.0)                    # makes 0-1 range > 0-255 range
-                        green = int(g * 255.0)
-                        blue = int(b * 255.0)
-                        unicornhathd.set_pixel(x, y, red, green, blue)  # sets pixels on the hat
-                unicornhathd.show()                             # show the pixels
-                time.sleep(0.005)                               # tiny gap, sets frames to a smooth 200/sec
-            time.sleep(0.8)                                     # waiting time between heartbeats
+                for level in brightness_levels:
+                    for x in range(16):
+                        for y in range(16):
+                            h = 0.0  # red
+                            s = 1.0  # saturation at the top of the red scale
+                            v = stop[x, y] * float(level) / 10     # brightness depends on range
+                            r, g, b = colorsys.hsv_to_rgb(h, s, v)  # convert hsv back to RGB
+                            red = int(r * 255.0)                    # makes 0-1 range > 0-255 range
+                            green = int(g * 255.0)
+                            blue = int(b * 255.0)
+                            unicornhathd.set_pixel(x, y, red, green, blue)  # sets pixels on the hat
+                    unicornhathd.show()                             # show the pixels
+                    time.sleep(0.005)                               # tiny gap, sets frames to a smooth 200/sec
+                time.sleep(0.8)                                     # waiting time between heartbeats
+            else:
+                # Go through each brightness level in the pattern
+                for level in brightness_levels:
+                    for x in range(16):
+                        for y in range(16):
+                            h = 0.0  # red
+                            s = 1.0  # saturation at the top of the red scale
+                            v = go_green[x, y] * float(level) / 10     # brightness depends on range
+                            r, g, b = colorsys.hsv_to_rgb(h, s, v)  # convert hsv back to RGB
+                            red = int(r * 255.0)                    # makes 0-1 range > 0-255 range
+                            green = int(g * 255.0)
+                            blue = int(b * 255.0)
+                            unicornhathd.set_pixel(x, y, red, green, blue)  # sets pixels on the hat
+                    unicornhathd.show()                             # show the pixels
+                    time.sleep(0.005)                               # tiny gap, sets frames to a smooth 200/sec
+                time.sleep(0.8)                                     # waiting time between heartbeats
+
 
     except KeyboardInterrupt:
-        unicornhathd.off()
         print("Press Ctrl-C to terminate while statement")
         pass
 
