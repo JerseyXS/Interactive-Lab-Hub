@@ -5,9 +5,18 @@ from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
+import colorsys
+import math
+import time
+
+import unicornhathd
+
 
 # If modifying these scopes, delete the file token.json.
 SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
+
+unicornhathd.rotation(0)
+unicornhathd.brightness(0.6)
 
 
 def main():
@@ -64,7 +73,32 @@ def main():
                 start = event['start'].get('dateTime', event['start'].get('date'))
                 print(start, event['summary'])
                 print(now)
+                
+                
+            step += 1
+            for x in range(0, 16):
+                for y in range(0, 16):
+                    dx = 7
+                    dy = 7
+
+                    dx = (math.sin(step / 20.0) * 15.0) + 7.0
+                    dy = (math.cos(step / 15.0) * 15.0) + 7.0
+                    sc = (math.cos(step / 10.0) * 10.0) + 16.0
+
+                    h = math.sqrt(math.pow(x - dx, 2) + math.pow(y - dy, 2)) / sc
+
+                    r, g, b = colorsys.hsv_to_rgb(h, 1, 1)
+
+                    r *= 255.0
+                    g *= 255.0
+                    b *= 255.0
+
+                    unicornhathd.set_pixel(x, y, r, g, b)
+
+            unicornhathd.show()
+            time.sleep(1.0 / 60)
     except KeyboardInterrupt:
+        unicornhathd.off()
         print("Press Ctrl-C to terminate while statement")
         pass
 
