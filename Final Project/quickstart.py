@@ -44,8 +44,7 @@ heart = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0],
          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
 
-# heart = numpy.array(heart)
-heart = numpy.ones((16, 16))
+heart = numpy.array(heart)
 go_green = numpy.ones((16, 16))
 
 # Define the brightness levels for the heartbeat (lower numbers are dimmer)
