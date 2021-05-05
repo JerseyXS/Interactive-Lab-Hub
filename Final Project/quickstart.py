@@ -1,5 +1,6 @@
 from __future__ import print_function
 import datetime
+from dateutil import parser
 import os.path
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -84,6 +85,7 @@ def main():
 
     # Call the Calendar API
     now = datetime.datetime.utcnow().isoformat() + 'Z'  # 'Z' indicates UTC time
+
     print('Getting the upcoming 10 events')
     events_result = service.events().list(calendarId='primary', timeMin=now,
                                           maxResults=10, singleEvents=True,
@@ -98,38 +100,56 @@ def main():
 
     step = 0
     try:
-        while True:
-            # Call the Calendar API
-            now = datetime.datetime.utcnow().isoformat() + 'Z'  # 'Z' indicates UTC time
-            print('Checking if we are in an event...')
-            events_result = service.events().list(calendarId='primary', timeMin=now,
-                                                maxResults=5, singleEvents=True,
-                                                orderBy='startTime').execute()
-            events = events_result.get('items', [])
+         while True:
+                     # Call the Calendar API
+                     now = datetime.datetime.utcnow().isoformat() + 'Z'  # 'Z' indicates UTC time
+                     print('Checking if we are in an event...')
+                     events_result = service.events().list(calendarId='primary', timeMin=now,
+                                                         maxResults=1, singleEvents=True,
+                                                         orderBy='startTime').execute()
+                     events = events_result.get('items', [])
+                     current_time = datetime.datetime.now().time() # get current time
+                     current_timestamp = datetime.datetime.timestamp(datetime.datetime.utcnow()) - 14400.0 #adjust for 4 hour diff from UTC
 
-            if not events:
-                print('You are free!')
-            for event in events:
-                start = event['start'].get('dateTime', event['start'].get('date'))
-                print(start, event['summary'])
-                print(now)
+                     start_datetime_object = parser.parse(event['start'].get('dateTime'))
+                     start_timestamp = start_datetime_object.timestamp()
+
+                     end_datetime_object = parser.parse(event['end'].get('dateTime'))
+                     end_timestamp = end_datetime_object.timestamp()
+
+                     if not events:
+                         print('You are free!')
+                     for event in events:
+                         # for debugging
+                         # print(f"JSON: {event}")
+                         # print(f"Start time: {event['start'].get('dateTime')}")
+                         # print(f"End time: {event['end'].get('dateTime')}")
+                         # print(f"Current datetime: {current_time}")
+                         # print(f"Current timestamp: {current_timestamp}")
+                         # print(f"Start datetime: {start_datetime_object}")
+                         # print(f"Start timestamp: {start_timestamp}")
+                         # print(f"End datetime: {end_datetime_object}")
+                         # print(f"End timestamp: {end_timestamp}")
+                         # print(f"Name: {event['summary']}")
+                         # print(f"Did the event start? {current_timestamp >= start_timestamp}")
+                         # print(f"Is the event still going on? {current_timestamp <= end_timestamp}")
                 
                 
-            # Go through each brightness level in the pattern
-            for level in brightness_levels:
-                for x in range(16):
-                    for y in range(16):
-                        h = 0.0  # red
-                        s = 1.0  # saturation at the top of the red scale
-                        v = heart[x, y] * float(level) / 10     # brightness depends on range
-                        r, g, b = colorsys.hsv_to_rgb(h, s, v)  # convert hsv back to RGB
-                        red = int(r * 255.0)                    # makes 0-1 range > 0-255 range
-                        green = int(g * 255.0)
-                        blue = int(b * 255.0)
-                        unicornhathd.set_pixel(x, y, red, green, blue)  # sets pixels on the hat
-                unicornhathd.show()                             # show the pixels
-                time.sleep(0.005)                               # tiny gap, sets frames to a smooth 200/sec
-            time.sleep(0.8)                                     # waiting time between heartbeats
+                     # Go through each brightness level in the pattern
+                     for level in brightness_levels:
+                         for x in range(16):
+                             for y in range(16):
+                                 h = 0.0  # red
+                                 s = 1.0  # saturation at the top of the red scale
+                                 v = heart[x, y] * float(level) / 10     # brightness depends on range
+                                 r, g, b = colorsys.hsv_to_rgb(h, s, v)  # convert hsv back to RGB
+                                 red = int(r * 255.0)                    # makes 0-1 range > 0-255 range
+                                 green = int(g * 255.0)
+                                 blue = int(b * 255.0)
+                                 unicornhathd.set_pixel(x, y, red, green, blue)  # sets pixels on the hat
+                         unicornhathd.show()                             # show the pixels
+                         time.sleep(0.005)                               # tiny gap, sets frames to a smooth 200/sec
+                     time.sleep(0.8)                                     # waiting time between heartbeats
 
     except KeyboardInterrupt:
         unicornhathd.off()
