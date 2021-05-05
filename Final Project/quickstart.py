@@ -69,10 +69,10 @@ go_green = numpy.ones((16, 16))
 
 # Define the brightness levels for the heartbeat (lower numbers are dimmer)
 # We let the minimum brightness be 1 so that there is still a visible heart
-rising = range(1, 10, 1)    # [1...9]
+rising = range(4, 10, 1)    # [1...9]
 ba = range(10, 5, -1)       # [10...6]
 dum = range(5, 10, 1)       # [5...9]
-falling = range(10, 0, -1)  # [10...1]
+falling = range(10, 4, -1)  # [10...1]
 
 # Join the ranges together
 pattern = (rising, ba, dum, falling)
