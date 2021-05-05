@@ -158,7 +158,7 @@ def main():
                             unicornhathd.set_pixel(x, y, red, green, blue)  # sets pixels on the hat
                     unicornhathd.show()                             # show the pixels
                     time.sleep(0.005)                               # tiny gap, sets frames to a smooth 200/sec
-                time.sleep(2.5)                                     # waiting time between heartbeats
+                time.sleep(1.5)                                     # waiting time between heartbeats
             else:
                  for x in range(16):
                      for y in range(16):
