@@ -164,7 +164,7 @@ def main():
                      for y in range(16):
                          h = 135.0  # green
                          s = 255.0  
-                         v = smile[x, y] * 1.0
+                         v = smile[x, y] * 255.0
                          r, g, b = colorsys.hsv_to_rgb(h, s, v)  # convert hsv back to RGB
                          red = int(r * 255.0)                    # makes 0-1 range > 0-255 range
                          green = int(g * 255.0)
