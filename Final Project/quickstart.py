@@ -59,6 +59,9 @@ falling = range(10, 0, -1)  # [10...1]
 # Join the ranges together
 pattern = (rising, ba, dum, falling)
 brightness_levels = list(itertools.chain.from_iterable(pattern))
+# Join the ranges together
+pattern2 = (rising, falling)
+brightness_levels2 = list(itertools.chain.from_iterable(pattern2))
 
 def main():
     """Shows basic usage of the Google Calendar API.
@@ -142,14 +145,16 @@ def main():
                     time.sleep(0.005)                               # tiny gap, sets frames to a smooth 200/sec
                 time.sleep(0.8)                                     # waiting time between heartbeats
             else:
-                # Go through each brightness level in the pattern
-                for level in brightness_levels:
+                for level in brightness_levels2:
                     for x in range(16):
-                        unicornhathd.set_pixel(x, y, 0, 255, 0)  # sets pixels on the hat
+                        for y in range(16):
+                            red = 0
+                            green = 255
+                            blue = 0
+                            unicornhathd.set_pixel(x, y, red, green, blue)  # sets pixels on the hat
                     unicornhathd.show()                             # show the pixels
                     time.sleep(0.005)                               # tiny gap, sets frames to a smooth 200/sec
-                time.sleep(0.8)                                     # waiting time between heartbeats
-
+                time.sleep(2)                                     # waiting time between heartbeats
 
     except KeyboardInterrupt:
         print("Press Ctrl-C to terminate while statement")
