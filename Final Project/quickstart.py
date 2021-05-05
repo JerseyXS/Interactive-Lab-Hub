@@ -119,20 +119,20 @@ def main():
 
             if not events:
                 print('You are free!')
-            for event in events:
-                # for debugging
-                # print(f"JSON: {event}")
-                # print(f"Start time: {event['start'].get('dateTime')}")
-                # print(f"End time: {event['end'].get('dateTime')}")
-                # print(f"Current datetime: {current_time}")
-                # print(f"Current timestamp: {current_timestamp}")
-                # print(f"Start datetime: {start_datetime_object}")
-                # print(f"Start timestamp: {start_timestamp}")
-                # print(f"End datetime: {end_datetime_object}")
-                # print(f"End timestamp: {end_timestamp}")
-                # print(f"Name: {event['summary']}")
-                # print(f"Did the event start? {current_timestamp >= start_timestamp}")
-                # print(f"Is the event still going on? {current_timestamp <= end_timestamp}")
+                for event in events:
+                         # for debugging
+                         # print(f"JSON: {event}")
+                         # print(f"Start time: {event['start'].get('dateTime')}")
+                         # print(f"End time: {event['end'].get('dateTime')}")
+                         # print(f"Current datetime: {current_time}")
+                         # print(f"Current timestamp: {current_timestamp}")
+                         # print(f"Start datetime: {start_datetime_object}")
+                         # print(f"Start timestamp: {start_timestamp}")
+                         # print(f"End datetime: {end_datetime_object}")
+                         # print(f"End timestamp: {end_timestamp}")
+                         # print(f"Name: {event['summary']}")
+                         # print(f"Did the event start? {current_timestamp >= start_timestamp}")
+                         # print(f"Is the event still going on? {current_timestamp <= end_timestamp}")
 
 
             # Go through each brightness level in the pattern
