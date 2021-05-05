@@ -173,10 +173,10 @@ def main():
                             red = int(r * 255.0)                    # makes 0-1 range > 0-255 range
                             green = int(g * 255.0)
                             blue = int(b * 255.0)
-                            unicornhathd.set_pixel(x, y, red, green, blue)  # sets pixels on the hat
+                            unicornhathd.set_pixel(x, y, 0, 255, 0)  # sets pixels on the hat
                     unicornhathd.show()                             # show the pixels
                     time.sleep(0.005)                               # tiny gap, sets frames to a smooth 200/sec
-                time.sleep(.5)                                     # waiting time between heartbeats
+                time.sleep(2)                                     # waiting time between heartbeats
 
     except KeyboardInterrupt:
         print("Press Ctrl-C to terminate while statement")
