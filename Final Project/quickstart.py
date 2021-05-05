@@ -64,6 +64,7 @@ smile = [[0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0],
 
 
 stop = numpy.array(stop)
+smile = numpy.array(smile)
 go_green = numpy.ones((16, 16))
 
 # Define the brightness levels for the heartbeat (lower numbers are dimmer)
@@ -167,7 +168,7 @@ def main():
                         for y in range(16):
                             h = 0.0  # red
                             s = 1.0  # saturation at the top of the red scale
-                            v = stop[x, y] * float(level) / 10     # brightness depends on range
+                            v = smile[x, y] * float(level) / 10     # brightness depends on range
                             r, g, b = colorsys.hsv_to_rgb(h, s, v)  # convert hsv back to RGB
                             red = int(r * 255.0)                    # makes 0-1 range > 0-255 range
                             green = int(g * 255.0)
