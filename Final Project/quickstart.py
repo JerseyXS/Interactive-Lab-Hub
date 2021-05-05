@@ -154,7 +154,7 @@ def main():
                             unicornhathd.set_pixel(x, y, red, green, blue)  # sets pixels on the hat
                     unicornhathd.show()                             # show the pixels
                     time.sleep(0.005)                               # tiny gap, sets frames to a smooth 200/sec
-                time.sleep(2)                                     # waiting time between heartbeats
+                time.sleep(.5)                                     # waiting time between heartbeats
 
     except KeyboardInterrupt:
         print("Press Ctrl-C to terminate while statement")
