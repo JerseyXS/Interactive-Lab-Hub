@@ -8,16 +8,54 @@ from google.oauth2.credentials import Credentials
 import colorsys
 import math
 import time
-
+import numpy
+import itertools
 import unicornhathd
 
+print("""Welcome to the Real World
+Do Not Disturb light.
+Press Ctrl+C to exit!
+""")
 
 # If modifying these scopes, delete the file token.json.
 SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
 
-unicornhathd.rotation(0)
-unicornhathd.brightness(0.6)
+unicornhathd.brightness(1)
 
+# We rotate the heart to be the same orientation as the text on the rear
+# of the Unicorn Hat HD
+unicornhathd.rotation(270)
+
+
+heart = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         [0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0],
+         [0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0],
+         [0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0],
+         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+         [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+         [0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0],
+         [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0],
+         [0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0],
+         [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0],
+         [0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0],
+         [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0],
+         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+
+heart = numpy.array(heart)
+
+# Define the brightness levels for the heartbeat (lower numbers are dimmer)
+# We let the minimum brightness be 1 so that there is still a visible heart
+rising = range(1, 10, 1)    # [1...9]
+ba = range(10, 5, -1)       # [10...6]
+dum = range(5, 10, 1)       # [5...9]
+falling = range(10, 0, -1)  # [10...1]
+
+# Join the ranges together
+pattern = (rising, ba, dum, falling)
+brightness_levels = list(itertools.chain.from_iterable(pattern))
 
 def main():
     """Shows basic usage of the Google Calendar API.
@@ -76,28 +114,22 @@ def main():
                 print(now)
                 
                 
-            step += 1
-            for x in range(0, 16):
-                for y in range(0, 16):
-                    dx = 7
-                    dy = 7
+            # Go through each brightness level in the pattern
+            for level in brightness_levels:
+                for x in range(16):
+                    for y in range(16):
+                        h = 0.0  # red
+                        s = 1.0  # saturation at the top of the red scale
+                        v = heart[x, y] * float(level) / 10     # brightness depends on range
+                        r, g, b = colorsys.hsv_to_rgb(h, s, v)  # convert hsv back to RGB
+                        red = int(r * 255.0)                    # makes 0-1 range > 0-255 range
+                        green = int(g * 255.0)
+                        blue = int(b * 255.0)
+                        unicornhathd.set_pixel(x, y, red, green, blue)  # sets pixels on the hat
+                unicornhathd.show()                             # show the pixels
+                time.sleep(0.005)                               # tiny gap, sets frames to a smooth 200/sec
+            time.sleep(0.8)                                     # waiting time between heartbeats
 
-                    dx = (math.sin(step / 20.0) * 15.0) + 7.0
-                    dy = (math.cos(step / 15.0) * 15.0) + 7.0
-                    sc = (math.cos(step / 10.0) * 10.0) + 16.0
-
-                    h = math.sqrt(math.pow(x - dx, 2) + math.pow(y - dy, 2)) / sc
-
-                    r, g, b = colorsys.hsv_to_rgb(h, 1, 1)
-
-                    r *= 255.0
-                    g *= 255.0
-                    b *= 255.0
-
-                    unicornhathd.set_pixel(x, y, r, g, b)
-
-            unicornhathd.show()
-            time.sleep(1.0 / 60)
     except KeyboardInterrupt:
         unicornhathd.off()
         print("Press Ctrl-C to terminate while statement")
