@@ -180,7 +180,7 @@ def main():
                  for x in range(16):
                      for y in range(16):
                          if caref[x][y] != 0:
-                             unicornhathd.set_pixel(x, y, 255, 185, 0)  # sets pixels on the hat
+                             unicornhathd.set_pixel(x, y, 255, 165, 0)  # sets pixels on the hat
                          else:
                              unicornhathd.set_pixel(x, y, 0, 0, 0)
                  unicornhathd.show()                             # show the pixels
