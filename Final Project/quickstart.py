@@ -176,6 +176,14 @@ def main():
                     unicornhathd.show()                             # show the pixels
                     time.sleep(0.005)                               # tiny gap, sets frames to a smooth 200/sec
                 time.sleep(1.5)                                     # waiting time between heartbeats
+            elif current_timestamp <= start_timestamp and (start_timestamp - current_timestampe) <= 600:
+                 for x in range(16):
+                     for y in range(16):
+                         if smile[x][y] != 0:
+                             unicornhathd.set_pixel(x, y, 0, 0, 255)  # sets pixels on the hat
+                         else:
+                             unicornhathd.set_pixel(x, y, 0, 0, 0)
+                 unicornhathd.show()                             # show the pixels
             else:
                  for x in range(16):
                      for y in range(16):
