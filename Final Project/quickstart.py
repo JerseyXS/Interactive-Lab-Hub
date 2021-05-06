@@ -176,7 +176,7 @@ def main():
                     unicornhathd.show()                             # show the pixels
                     time.sleep(0.005)                               # tiny gap, sets frames to a smooth 200/sec
                 time.sleep(1.5)                                     # waiting time between heartbeats
-            elif current_timestamp <= start_timestamp and (start_timestamp - current_timestampe) <= 600:
+            elif current_timestamp <= start_timestamp and (start_timestamp - current_timestamp) <= 600:
                  for x in range(16):
                      for y in range(16):
                          if smile[x][y] != 0:
