@@ -165,7 +165,7 @@ def main():
                          if smile[x][y] != 0:
                              unicornhathd.set_pixel(x, y, 0, 255, 0)  # sets pixels on the hat
                          else:
-                             pass
+                             unicornhathd.set_pixel(x, y, 0, 0, 0)
                  unicornhathd.show()                             # show the pixels
 
     except KeyboardInterrupt:
