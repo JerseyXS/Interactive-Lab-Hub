@@ -136,6 +136,7 @@ def main():
 
     try:
         while True:
+            time.sleep(1)
             # Call the Calendar API
             now = datetime.datetime.utcnow().isoformat() + 'Z'  # 'Z' indicates UTC time
             print('Checking if we are in an event...')
