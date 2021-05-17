@@ -37,7 +37,9 @@ I used the following materials in order to build this project:
 * Google Account
 
 ### Running the Code
-This project can 
+This project can be run on the command line using the command: python quickstart.py
+
+This will start the script. The script will first set up the Google Calendar API connection using the user's credentials. It will then create a stream of upcoming events. Through a loop that runs every second, the code then checks if the next event in the stream is happening right now. It will then convert the JSON date format to a regular timestamp and compare this event timestamp to the current timestamp. This is where the three cases for the light come in. If the event is >10 minutes away, a green light will show. If the event has not start and is <10 minutes away, a yellow light will show. If the event has started, a red light will show. 
 
 ### Materials Used
 
