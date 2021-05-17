@@ -43,7 +43,7 @@ This will start the script. The script will first set up the Google Calendar API
 
 ### Reflections
 
-Overall, I was very pleased with the end result of the project and have already started using it in my day-to-day life. The most enjoyable part for me was designing the device, both physically and from a usability standpoint. The most difficult part of the project was interacting with and debugging the Google Calendar API. The Google Cloud dashboard is very robust and overkill for managing a simple API, yet I had to jump through a lot of hoops to get it working and have it continue to work once I accidentally triggerd the API call limit. If I were to implement this 
+Overall, I was very pleased with the end result of the project and have already started using it in my day-to-day life. The most enjoyable part for me was designing the device, both physically and from a usability standpoint. The most difficult part of the project was interacting with and debugging the Google Calendar API. The Google Cloud dashboard is very robust and overkill for managing a simple API, yet I had to jump through a lot of hoops to get it working and have it continue to work once I accidentally triggerd the API call limit. If I were to implement this in production, I would have to spend a considerable amount of time ensuring the end-user does not run into issues with the Google Calendar API integration. If I had more time, I would like to incorporate additional apps like Slack, Teams, and Outlook.
 
 Documentation of design process
 Archive of all code, design patterns, etc. used in the final design. (As with labs, the standard should be that the documentation would allow you to recreate your project if you woke up with amnesia.)
