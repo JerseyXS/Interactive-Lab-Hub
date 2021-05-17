@@ -39,9 +39,11 @@ I used the following materials in order to build this project:
 ### Running the Code
 This project can be run on the command line using the command: python quickstart.py
 
-This will start the script. The script will first set up the Google Calendar API connection using the user's credentials. It will then create a stream of upcoming events. Through a loop that runs every second, the code then checks if the next event in the stream is happening right now. It will then convert the JSON date format to a regular timestamp and compare this event timestamp to the current timestamp. This is where the three cases for the light come in. If the event is >10 minutes away, a green light will show. If the event has not start and is <10 minutes away, a yellow light will show. If the event has started, a red light will show. 
+This will start the script. The script will first set up the Google Calendar API connection using the user's credentials. It will then create a stream of upcoming events. Through a loop that runs every second, the code then checks if the next event in the stream is happening right now. It will then convert the JSON date format to a regular timestamp and compare this event timestamp to the current timestamp. This is where the three cases for the light come in. If the event is >10 minutes away, a green light will show. If the event has not start and is <10 minutes away, a yellow light will show. If the event has started, a red light will show. The lights were hand-drawn using numpy arrays at the beginnig of the script and colored according to the unicornhat API. 
 
-### Materials Used
+### Reflections
+
+Overall, I was very pleased with the end result of the project and have already started using it in my day-to-day life. The most enjoyable part for me was designing the device, both physically and from a usability standpoint. The most difficult part of the project was interacting with and debugging the Google Calendar API. The Google Cloud dashboard is very robust and overkill for managing a simple API, yet I had to jump through a lot of hoops to get it working and have it continue to work once I accidentally triggerd the API call limit. 
 
 Documentation of design process
 Archive of all code, design patterns, etc. used in the final design. (As with labs, the standard should be that the documentation would allow you to recreate your project if you woke up with amnesia.)
