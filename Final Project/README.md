@@ -22,6 +22,18 @@ In designing this device, I wanted it to look appealing on a desk and friendly t
 
 The other factor I considered for the design was how it would be mounted. I did not think simply placing it on the desk would be appropriate. It is easy for people to not notice something on a desk until they are already too close. I recall back from a banking internship that employee name plates were placed directly on top of each employee's monitor to maximize intra-office visibility. This led me to seek out a monitor-mounting solution. After perusing Amazon, I came to the conclusion that a magnetic, monitor-mounted smartphone holder would serve this job extremely well. In order to place a magnet on the device, however, I needed an enclosure. This led me to the Pimoroni Coupe. What I really liked about this enclosure was that it could be assembled in layers. Since my LED array was so big, I needed to leave the outermost layer exposed. After assembling this partial enclosure, I was then abe to mount the device to my monitor in such a way that the power cable is completely hidden and daisy chained off of the monitors USB A ports.
 
+![sketch2](pi1.jpg "sketch")
+![sketch2](pi_back.jpg "sketch")
+![sketch2](pi_front.jpg "sketch")
+![sketch2](stand.jpg "sketch")
+![sketch2](red.jpg "sketch")
+![sketch2](green.jpg "sketch")
+![sketch2](yellow.jpg "sketch")
+
+
+
+
+
 ### Materials Used
 * Raspberry Pi 4
 * Unicorn Hat HD (LED Display) w/ Light Diffusor
