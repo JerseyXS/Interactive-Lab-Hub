@@ -27,10 +27,8 @@ The other factor I considered for the design was how it would be mounted. I did 
 ![sketch2](yellow.jpg "sketch")
 
 
-
-
-
 ### Materials Used
+I used the following materials in order to build this project:
 * Raspberry Pi 4
 * Unicorn Hat HD (LED Display) w/ Light Diffusor
 * Pimoroni Pibow Coupe (Enclosure)
@@ -38,6 +36,10 @@ The other factor I considered for the design was how it would be mounted. I did 
 * USB-A to USB-C Cable
 * Google Account
 
+### Running the Code
+This project can 
+
+### Materials Used
 
 Documentation of design process
 Archive of all code, design patterns, etc. used in the final design. (As with labs, the standard should be that the documentation would allow you to recreate your project if you woke up with amnesia.)
